@@ -15,7 +15,7 @@ function NavbarMain() {
           <Nav className="me-auto">
             {
                 array.map((item)=>{
-                    return <Nav.Link href="#home"><img className="image" src={item.imageSource} alt=""/><span className="textLine">{item.text}</span></Nav.Link>
+                    return <Nav.Link href={`#${item.text}`}><img className="image" src={item.imageSource} alt=""/><span className="textLine">{item.text}</span></Nav.Link>
 
                 })
             }

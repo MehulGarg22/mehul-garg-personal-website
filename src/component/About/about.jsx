@@ -1,14 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import NavbarMain from "../navbar/navbar";
 import Button from 'react-bootstrap/Button';
 import Home from "../Home/home";
 import './about.css'
 import profilePhoto from '../../assests/MehulGargPic.jpg'
+import Modal from 'react-bootstrap/Modal';
+import mehulResumePdf from '../../assests/Mehul-Garg-Software-Engineer-1.4YoE-Resume.pdf'
 
 export default function About(){
+    const [resumePopUp, setResumePopUp]=useState(false);
+
+    const handleResumeClick=()=>{
+        setResumePopUp(true)
+    }
+    const handleClose=()=>setResumePopUp(false)
 
     return(
-        <div id="aboutContainer">
+        <div id="About">
             <br/>
             <p className="textLine1">ABOUT ME</p>
             <br/>
@@ -31,8 +39,21 @@ export default function About(){
                     </p>
                     <div className="photoTextFlexingButtons">
                         <div className="button1">
-                            <Button className="button" variant="outline-info">Resume</Button>        
+                            <Button className="button" onClick={handleResumeClick} variant="outline-info">Resume</Button>        
                         </div>
+                        <Modal contentClassName="custom-modal-style" show={resumePopUp} onHide={handleClose}>
+                            <Modal.Header closeButton>
+                            <Modal.Title>My Resume</Modal.Title>
+                            </Modal.Header>
+                            <Modal.Body>
+                                <embed src={mehulResumePdf} width="100%" height="100%" type="application/pdf"/>
+                            </Modal.Body>
+                            <Modal.Footer>
+                            <Button variant="outline-secondary" onClick={handleClose}>
+                                Close
+                            </Button>
+                            </Modal.Footer>
+                        </Modal>
                         <div className="button2">
                             <Button className="button" variant="outline-info">Education</Button>        
                         </div>
