@@ -6,6 +6,7 @@ import './about.css'
 import profilePhoto from '../../assests/MehulGargPic.jpg'
 import Modal from 'react-bootstrap/Modal';
 import mehulResumePdf from '../../assests/Mehul-Garg-Software-Engineer-1.4YoE-Resume.pdf'
+import Heading from '../Heading/heading';
 
 export default function About(){
     const [resumePopUp, setResumePopUp]=useState(false);
@@ -17,9 +18,7 @@ export default function About(){
 
     return(
         <div id="About">
-            <br/>
-            <p className="textLine1">ABOUT ME</p>
-            <br/>
+            <Heading heading={"About"}/>
             <div className="photoTextFlexing">
                 <div>
                     <img style={{marginTop:'20px'}} height="auto" width="250px" src={profilePhoto}

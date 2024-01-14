@@ -3,6 +3,7 @@ import NavbarMain from "../navbar/navbar";
 import Button from 'react-bootstrap/Button';
 import Home from "../Home/home";
 import About from '../About/about'
+import Skills from "../Skills/skills";
 
 export default function Dashboard(){
 
@@ -11,6 +12,7 @@ export default function Dashboard(){
             <NavbarMain/>
             <Home />
             <About />
+            <Skills />
         </>
     );
 }
