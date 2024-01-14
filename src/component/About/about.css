@@ -1,5 +1,6 @@
 #About{
-    margin-top: 270px;
+    margin-top: 250px;
+    font-style: normal;
     background-color: #02aab0;
     background-image: linear-gradient(135 deg, #02aab0 0%, #00cdac 100%);
     color: #fff;
@@ -9,25 +10,25 @@
     padding-bottom: 8%;
 }
 #About .textLine1{
-    margin-top: 30px;
+    margin-top: 10px;
     text-align: center;
-    font-size: 50px;
+    font-size: 30px;
     font-weight: bold;
 }
 #About .photoTextFlexing{
-    margin-left: 190px;
-    margin-right: 190px;
+    margin-left: 150px;
+    margin-right: 140px;
     display: flex;
 }
 #About .textLine2{
-    font-size: 18px;
+    font-size: 20px;
 }
 #About .textLine3{
     text-decoration: underline ; 
     color: white;
 }
 #About .textLine4{
-    margin-left: 50px;
+    margin-left: 35px;
 }
 #About .photoTextFlexingButtons{
     display: flex;

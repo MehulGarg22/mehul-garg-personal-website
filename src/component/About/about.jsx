@@ -22,20 +22,13 @@ export default function About(){
             <br/>
             <div className="photoTextFlexing">
                 <div>
-                    <img height="auto" width="300px" src={profilePhoto}
+                    <img style={{marginTop:'20px'}} height="auto" width="250px" src={profilePhoto}
                     alt="Profile Image" />
                 </div>
                 <div className="textLine4">
                     <p className="textLine2">
-                        I am a fourth year engineering undergraduate at <a href="http://hnbgu.ac.in/" target="_blank" className="textLine3">Hemvati Nandan Bahuguna Garhwal University (A Central
-                        University)</a>, pursuing Bachelor of Technology in Information Technology. As a student of Information
-                        Technology, I am fascinated by the extensive impact
-                        computers can have in solving real world problems. I am specially interested in the fields of Design and
-                        Analysis of Algorithms and Full Stack Development.
-                    </p>
-                    <p className="textLine2">
-                        Among my other interest, I am fascinated by Economics and particularly in Finance which has some combination of
-                        frugality and paranoia.
+                        Greetings, digital explorers! I'm a Software Engineer  with a Bachelor of Technology degree from <a href="http://hnbgu.ac.in/" target="_blank" className="textLine3">Hemvati Nandan Bahuguna Garhwal University (A Central University)</a> and with over 1.5+ years of experience in the software industry. In the vast cosmos of 0s and 1s, I've found my calling in developing software that's as innovative as it is efficient. <br/>I am well versed with data structures and algorithms, with a repository of solutions to over 280 challenging questions. I regularly solve questions on platforms like LeetCode and Geeks for Geeks, honing my problem-solving skills and keeping my coding abilities sharp.<br/>
+                        My journey has led me to work with an array of technologies including ReactJS, Redux, AWS Lambda, DynamoDB, API Gateway, Amplify, and Cognito, to name a few.
                     </p>
                     <div className="photoTextFlexingButtons">
                         <div className="button1">
