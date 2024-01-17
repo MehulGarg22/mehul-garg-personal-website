@@ -3,3 +3,11 @@
     margin-left: auto;
     margin-right: auto;
 }
+.titleText{
+    font-weight: bold;
+    text-align: center;
+}
+.images{
+    width:30px;
+    height: 30px;
+}
