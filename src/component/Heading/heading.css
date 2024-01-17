@@ -1,0 +1,8 @@
+#heading{
+    padding-top: 5px;
+}
+#heading .textLine1{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
