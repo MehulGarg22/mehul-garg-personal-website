@@ -15,11 +15,6 @@
     font-size: 30px;
     font-weight: bold;
 }
-#About .photoTextFlexing{
-    margin-left: 150px;
-    margin-right: 140px;
-    display: flex;
-}
 #About .textLine2{
     font-size: 20px;
 }
@@ -27,9 +22,7 @@
     text-decoration: underline ; 
     color: white;
 }
-#About .textLine4{
-    margin-left: 35px;
-}
+
 #About .photoTextFlexingButtons{
     display: flex;
 }
@@ -46,4 +39,7 @@
     margin-right: 300px;
     width: 40vw;
     height: 90vh;
+}
+#About .g-4 .row .row-cols-md-2 .row-cols-1 .col{
+    width: 90px;
 }
