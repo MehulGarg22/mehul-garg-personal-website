@@ -1,7 +1,5 @@
 import React, { useState } from "react";
-import NavbarMain from "../navbar/navbar";
 import Button from 'react-bootstrap/Button';
-import Home from "../Home/home";
 import './about.css'
 import profilePhoto from '../../assests/MehulGargPic.jpg'
 import Modal from 'react-bootstrap/Modal';
