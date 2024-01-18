@@ -5,6 +5,8 @@ import Home from "../Home/home";
 import About from '../About/about'
 import Skills from "../Skills/skills";
 import './dashboard.css'
+import Education from "../Education/education";
+import Certificate from "../Certificates/certificate";
 export default function Dashboard(){
 
     return(
@@ -13,6 +15,8 @@ export default function Dashboard(){
             <Home />
             <About />
             <Skills />
+            <Education/>
+            <Certificate/>
         </div>
     );
 }

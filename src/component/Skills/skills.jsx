@@ -5,8 +5,17 @@ import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import './skills.css';
 import { skillsArray } from "../constant.js/constant";
+import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
+import Tooltip from 'react-bootstrap/Tooltip';
 
 export default function Skills(){
+
+    const renderTooltip = (props) => (
+        <Tooltip id="button-tooltip" {...props}>
+          {props}
+        </Tooltip>
+    );
+
     return(
         <div className="skillContainer">
             <Heading heading={"__Skills__"} />
@@ -23,7 +32,14 @@ export default function Skills(){
                                             skills.programmingLanguage.map((programmingLanguage)=>{
                                                 return (
                                                     <Card.Text>
-                                                        <img className="images" src={programmingLanguage.image} alt={programmingLanguage.imageAlt}/>
+                                                            <OverlayTrigger
+                                                                placement="top"
+                                                                className="overlay"
+                                                                delay={{ show: 250, hide: 400 }}
+                                                                overlay={renderTooltip(programmingLanguage.descirption)}
+                                                            >
+                                                                <img  className="images" src={programmingLanguage.image} alt={programmingLanguage.imageAlt}/>
+                                                            </OverlayTrigger>
                                                     </Card.Text>
                                                 )
                                             })

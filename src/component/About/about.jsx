@@ -18,7 +18,7 @@ export default function About(){
 
     return(
         <div id="About">
-            <Heading heading={"About"}/>
+            <Heading heading={"__About__"}/>
             <Row xs={1} md={2} className="g-4">
                 <Col>
                     <img style={{marginTop:'20px', marginLeft:'40%'}} height="auto" width="250px" src={profilePhoto} alt="Profile Image" />

@@ -5,7 +5,9 @@ import { homeArray } from "../constant.js/constant";
 import './home.css'
 
 export default function Home(){
-    
+    const urlNavigate=()=>{
+        window.location.href="#About"
+    }
     return(
         <div id="home">
             <div>
@@ -23,7 +25,7 @@ export default function Home(){
                         })
                     }
                 </div>
-                <Button className="button" variant="outline-info">Know More</Button>        
+                <Button className="button" onClick={urlNavigate} variant="outline-info">Know More</Button>        
             </div>
       </div>
     );

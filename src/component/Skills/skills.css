@@ -9,5 +9,9 @@
 }
 .images{
     width:30px;
+    cursor: pointer;
     height: 30px;
+}
+.overlay{
+    cursor: pointer;
 }
