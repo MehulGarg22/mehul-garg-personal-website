@@ -65,13 +65,13 @@ export  let array=[
         imageSource: project
     },
     {
-        text: "Certificates",
-        imageSource: certificate
-    },
-    {
         text: "Education",
         imageSource: education
     },
+    {
+        text: "Certificates",
+        imageSource: certificate
+    }
     // {
     //     text: "Contact",
     //     imageSource: contact
