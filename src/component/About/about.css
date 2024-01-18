@@ -9,6 +9,21 @@
     height: 100%;
     padding-bottom: 8%;
 }
+#About .aboutContent{
+    margin-bottom: 40px;
+}
+#About .aboutImage{
+    margin-top:20px;
+    margin-left:40%;
+    @media (max-width: 767px) {
+        margin-top:0;
+        margin-left:0%;
+    }
+    @media (max-width: 400px) {
+        margin-top:0;
+        margin-left:0%;
+    }
+}
 #About .textLine1{
     margin-top: 10px;
     text-align: center;
@@ -25,6 +40,12 @@
 
 #About .photoTextFlexingButtons{
     display: flex;
+    @media (max-width: 767px) {
+        margin-bottom: 90px;
+    }
+    @media (max-width: 400px) {
+        margin-bottom: 120px;
+    }
 }
 #About .photoTextFlexingButtons .button1 .button{
     margin-right: 30px;

@@ -72,10 +72,10 @@ export  let array=[
         text: "Education",
         imageSource: education
     },
-    {
-        text: "Contact",
-        imageSource: contact
-    },
+    // {
+    //     text: "Contact",
+    //     imageSource: contact
+    // },
  ]
 
 export let homeArray=[

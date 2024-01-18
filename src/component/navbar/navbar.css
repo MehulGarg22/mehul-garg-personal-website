@@ -2,6 +2,12 @@
     width:90%;
     margin-left: 50px;
     border-radius: 30px;
+    @media (max-width: 767px) {
+        margin-left: 30px;
+    }
+    @media (max-width: 400px) {
+        margin-left: 25px;
+    }
 }
 
 .image{
