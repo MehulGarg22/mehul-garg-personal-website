@@ -17,7 +17,6 @@ function NavbarMain() {
               {
                   array.map((item)=>{
                       return <Nav.Link href={`#${item.text}`}><img className="image" src={item.imageSource} alt=""/><span className="textLine">{item.text}</span></Nav.Link>
-
                   })
               }
             </Nav>

@@ -10,11 +10,25 @@ import Row from 'react-bootstrap/Row';
 
 export default function About(){
     const [resumePopUp, setResumePopUp]=useState(false);
-
     const handleResumeClick=()=>{
         setResumePopUp(true)
     }
+    const education=(props)=>{
+        window.location.href=props
+    }
     const handleClose=()=>setResumePopUp(false)
+    const download=()=>{
+        window.open(mehulResumePdf, "_blank")
+    }
+    const [isHovering, setIsHovering] = useState(false);
+
+    const handleMouseEnter = () => {
+      setIsHovering(true);
+    };
+  
+    const handleMouseLeave = () => {
+      setIsHovering(false);
+    };  
 
     return(
         <div id="About">
@@ -41,18 +55,23 @@ export default function About(){
                                     <embed src={mehulResumePdf} width="100%" height="100%" type="application/pdf"/>
                                 </Modal.Body>
                                 <Modal.Footer>
+                                <Button style={{color: isHovering ? 'white' : '#00cdac'}} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} target="_blank" variant="outline-info" onClick={download}>
+                                    Download Resume
+                                </Button>
                                 <Button variant="outline-secondary" onClick={handleClose}>
                                     Close
                                 </Button>
                                 </Modal.Footer>
                             </Modal>
                             <div className="button2">
-                                <Button className="button" variant="outline-info">Education</Button>        
+                                <Button className="button" onClick={()=>education("#Education")} variant="outline-info">Education</Button>        
                             </div>
                         </div>
                     </div>
                 </Col>
             </Row>
+            <br/>
+            <br/>
         </div>
     );
 }

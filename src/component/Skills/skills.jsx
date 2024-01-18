@@ -17,8 +17,11 @@ export default function Skills(){
     );
 
     return(
-        <div className="skillContainer">
+        <div id="Skills" className="skillContainer">
+            <br/>
             <Heading heading={"__Skills__"} />
+            <br/>
+            <br/>
             <Row xs={1} md={2} className="g-4">
                 {
                     skillsArray.map((skills, idx)=>(
@@ -51,6 +54,10 @@ export default function Skills(){
                     ))
                 }
             </Row>
+            <br/>
+            <br/>
+            <br/>
+
         </div>
     );
 }

@@ -1,10 +1,20 @@
-import React from "react";
+import React,{useState} from "react";
 import NavbarMain from "../navbar/navbar";
 import Button from 'react-bootstrap/Button';
 import { homeArray } from "../constant.js/constant";
 import './home.css'
 
 export default function Home(){
+    const [isHovering, setIsHovering] = useState(false);
+
+    const handleMouseEnter = () => {
+      setIsHovering(true);
+    };
+  
+    const handleMouseLeave = () => {
+      setIsHovering(false);
+    };  
+
     const urlNavigate=()=>{
         window.location.href="#About"
     }
@@ -25,7 +35,7 @@ export default function Home(){
                         })
                     }
                 </div>
-                <Button className="button" onClick={urlNavigate} variant="outline-info">Know More</Button>        
+                <Button style={{color: isHovering ? 'white' : '#00cdac'}} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} className="button" onClick={urlNavigate} variant="outline-info">Know More</Button>        
             </div>
       </div>
     );

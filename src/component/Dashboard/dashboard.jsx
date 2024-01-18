@@ -9,6 +9,7 @@ import Education from "../Education/education";
 import Certificate from "../Certificates/certificate";
 import Footer from "../Footer/footer";
 import Experience from "../Experience/experience";
+import Projects from "../Projects/project";
 
 export default function Dashboard(){
 
@@ -19,6 +20,7 @@ export default function Dashboard(){
             <About />
             <Skills />
             <Experience />
+            <Projects />
             <Education/>
             <Certificate/>
             <Footer/>

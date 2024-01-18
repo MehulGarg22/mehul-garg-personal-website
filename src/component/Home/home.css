@@ -1,23 +1,24 @@
 #home{
     margin-left: 10%;
-    margin-top: 7%;
+    margin-top: 13.5%;
 }
 #home .linkContainer{
-    margin-top: 50px;
-    margin-bottom: 30px;
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 #home .image{
-    width: 60px;
-    height: 60px;
-    margin: 20px;
+    width: 40px;
+    height: 40px;
+    margin-right: 40px;
+    margin-bottom: 20px;
 }
 #home .textLine2{
     color: #00cdac;
 }
 #home .textLine1{
     font-weight: bold;
-    font-size: 70px;
+    font-size: 50px;
 }
 #home .button{
-    font-size: 25px;
+    font-size: 20px;
 }

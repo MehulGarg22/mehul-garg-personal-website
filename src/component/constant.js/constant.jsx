@@ -316,3 +316,41 @@ export let footerArray=[
         descirption: "Instagram"
     }
 ]
+
+
+export let experienceArray=[
+    {
+        date: "2022- present",
+        companyName: "Tata Consultancy Services Ltd.",
+        position:"Software Engineer",
+        workDescription: ""
+    },
+    {
+        date: "September 2021- June 2022",
+        companyName: "Airtel Digital",
+        position:"Software Development Engineer Intern",
+        workDescription: ""
+    }
+]
+
+
+export let educationArray=[
+    {
+        date: "2018- 2022",
+        educationName: "B.Tech, Information Technology",
+        universityOrBoardName:"Hemvati Nandan Bahuguna Garhwal University",
+        universityOrBoardNameNext: "(A Central University)"
+    },
+    {
+        date: "2017- 2018",
+        educationName: "12th (Senior Secondary Examination)",
+        universityOrBoardName:"Central Board of Secondary Education",
+        universityOrBoardNameNext: "(A Central University)"
+    },
+    {
+        date: "2015- 2016",
+        educationName: "10th (Secondary Examination)",
+        universityOrBoardName:"Central Board of Secondary Education",
+        universityOrBoardNameNext: "(A Central University)"
+    }
+]

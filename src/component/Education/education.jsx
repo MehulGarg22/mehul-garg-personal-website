@@ -1,53 +1,80 @@
-import React, { useState } from "react";
-import Button from 'react-bootstrap/Button';
-import './education.css'
-import profilePhoto from '../../assests/MehulGargPic.jpg'
-import Modal from 'react-bootstrap/Modal';
-import mehulResumePdf from '../../assests/Mehul-Garg-Software-Engineer-1.4YoE-Resume.pdf'
-import Heading from '../Heading/heading';
-import Col from 'react-bootstrap/Col';
-import Row from 'react-bootstrap/Row';
+import React from "react";
+import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
+import 'react-vertical-timeline-component/style.min.css';
+import Heading from "../Heading/heading";
+import './education.css';
+import SchoolIcon from '@mui/icons-material/School';
+import WorkOutlineIcon from '@mui/icons-material/WorkOutline';
+import { educationArray } from "../constant.js/constant";
+
 
 export default function Education(){
-    const [resumePopUp, setResumePopUp]=useState(false);
-
-    const handleResumeClick=()=>{
-        setResumePopUp(true)
-    }
-    const handleClose=()=>setResumePopUp(false)
-
     return(
         <div id="Education">
             <br/>
-            <Heading heading={"__Education__"}/>
-            <Row xs={1} md={3} className="g-4">
-                <Col>
-                    <span className="heading">B.Tech, Information Technology</span>
-                    <p>
-                        Hemvati Nandan Bahuguna Garhwal University <br/>
-                        (A Central University)<br/>
-                        2018-2022
-                    </p>
-                </Col>
-                <Col>
-                    <Col>
-                        <span className="heading">12th (Senior Secondary Examination)</span>
-                        <p>
-                            Central Board of Secondary Education <br/>
-                            2018
-                        </p>
-                    </Col>
-                </Col>
-                <Col>
-                    <Col>
-                        <span className="heading">10th (Secondary Examination)</span>
-                        <p>
-                            Central Board of Secondary Education <br/>
-                            2016
-                        </p>
-                    </Col>
-                </Col>
-            </Row>
+            <Heading heading={"__Education__"} />
+            <VerticalTimeline lineColor="white">
+                {
+                    educationArray.map((education)=>{
+                        return(
+                            <VerticalTimelineElement
+                                className="vertical-timeline-element--work"
+                                contentStyle={{ background: 'white', color: '#02aab0', boxShadow:'none' }}
+                                contentArrowStyle={{ borderRight: '7px solid  white' }}
+                                date={education.date}
+                                iconStyle={{ background: '#02aab0', color: 'white' }}
+                                icon={<SchoolIcon />}
+                                
+                            >
+                                <h3 className="title">{education?.educationName}</h3>
+                                <h4 className="subtitle">
+                                    {education.universityOrBoardName}<br/>
+                                    {education.universityOrBoardNameNext}
+                                </h4>
+                            </VerticalTimelineElement>
+                        )
+                    })
+                }
+
+
+                <VerticalTimelineElement
+                    iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }} 
+                />
+            </VerticalTimeline>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+        
         </div>
-    );
+    )
 }
+
+
+
+{/* <VerticalTimelineElement
+className="vertical-timeline-element--work"
+contentStyle={{ background: 'white', color: '#02aab0', border:'1px solid white' }}
+contentArrowStyle={{ borderRight: '7px solid  white' }}
+date="2017- 2018"
+iconStyle={{ background: '#02aab0', color: 'white' }}
+icon={<SchoolIcon />}
+>
+<h3 className="title">12th (Senior Secondary Examination)</h3>
+<h4 className="subtitle">Central Board of Secondary Education</h4>
+</VerticalTimelineElement>
+<VerticalTimelineElement
+className="vertical-timeline-element--work"
+contentStyle={{ background: 'white', color: '#02aab0', border:'1px solid white' }}
+contentArrowStyle={{ borderRight: '7px solid  white' }}
+date="2015- 2016"
+iconStyle={{ background: '#02aab0', color: 'white' }}
+icon={<SchoolIcon />}
+>
+<h3 className="title">10th (Secondary Examination)</h3>
+<h4 className="subtitle">Central Board of Secondary Education</h4>
+
+</VerticalTimelineElement> */}

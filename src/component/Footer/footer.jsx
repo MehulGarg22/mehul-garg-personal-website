@@ -15,6 +15,7 @@ export default function Footer(){
 
     return(
         <div id="footer">
+            <br/>
             <a href="#top" className="uparrow">
                 <OverlayTrigger
                     placement="top"
