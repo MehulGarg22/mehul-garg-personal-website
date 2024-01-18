@@ -41,6 +41,11 @@ import s3 from '../../assests/Simple Storage Service.png';
 import awscloudpractitioner from '../../assests/AWS Certified Cloud Practitioner.png';
 import googleTech from '../../assests/GoogleTech.png';
 import internshala from '../../assests/Internshala.png'
+import linkedinsvg from '../../assests/linkedinsvg.png';
+import githubsvg from '../../assests/githubsvg.png';
+import xsvg from '../../assests/xsvg.png';
+import instagramsvg from '../../assests/instagramsvg.png';
+import mailsvg from '../../assests/mailsvg.png';
 
 export  let array=[
     {
@@ -277,4 +282,37 @@ export let certificateArray=[
         imageAlt: "Internshala",
         imageLink:"https://drive.google.com/file/d/1s5zxSOdamFeLKHR4lDds5vxsN2cNURV4/view?usp=sharing"
     },
+]
+
+export let footerArray=[
+    {
+        imageSource: "fa fa-linkedin fa-inverse",
+        imageAlt: "Linkedin Icon",
+        imageLink:"https://www.linkedin.com/in/mehulgarg22/",
+        descirption: "LinkedIn"
+    },
+    {
+        imageSource: "fa fa-github fa-inverse",
+        imageAlt: "Github Icon",
+        imageLink:"https://github.com/MehulGarg22",
+        descirption: "Github"
+    },
+    {
+        imageSource: "fa far fa-envelope fa-inverse",
+        imageAlt: "Gmail Icon",
+        imageLink:"mailto:mehul.garg104@gmail.com",
+        descirption: "Gmail"
+    },
+    {
+        imageSource: "fa fa-twitter fa-inverse",
+        imageAlt: "X Icon",
+        imageLink:"https://twitter.com/MehulGarg22",
+        descirption: "X.com"
+    },
+    {
+        imageSource: "fa fab fa-instagram fa-inverse",
+        imageAlt: "Instagram Icon",
+        imageLink:"https://www.instagram.com/__mehul_garg__/",
+        descirption: "Instagram"
+    }
 ]

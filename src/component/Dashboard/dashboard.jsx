@@ -7,6 +7,8 @@ import Skills from "../Skills/skills";
 import './dashboard.css'
 import Education from "../Education/education";
 import Certificate from "../Certificates/certificate";
+import Footer from "../Footer/footer";
+
 export default function Dashboard(){
 
     return(
@@ -17,6 +19,7 @@ export default function Dashboard(){
             <Skills />
             <Education/>
             <Certificate/>
+            <Footer/>
         </div>
     );
 }
