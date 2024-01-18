@@ -8,6 +8,7 @@ import './dashboard.css'
 import Education from "../Education/education";
 import Certificate from "../Certificates/certificate";
 import Footer from "../Footer/footer";
+import Experience from "../Experience/experience";
 
 export default function Dashboard(){
 
@@ -17,6 +18,7 @@ export default function Dashboard(){
             <Home />
             <About />
             <Skills />
+            <Experience />
             <Education/>
             <Certificate/>
             <Footer/>
