@@ -3,7 +3,7 @@ import Button from 'react-bootstrap/Button';
 import './about.css'
 import profilePhoto from '../../assests/MehulGargPic.jpg'
 import Modal from 'react-bootstrap/Modal';
-import mehulResumePdf from '../../assests/Mehul-Garg-Software-Engineer-1.4YoE-Resume.pdf'
+import { aboutArray } from "../constant.js/constant";
 import Heading from '../Heading/heading';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
@@ -18,7 +18,7 @@ export default function About(){
     }
     const handleClose=()=>setResumePopUp(false)
     const download=()=>{
-        window.open(mehulResumePdf, "_blank")
+        window.open(aboutArray[0].resumeLink, "_blank")
     }
     const [isHovering, setIsHovering] = useState(false);
 
@@ -53,7 +53,7 @@ export default function About(){
                                     <Modal.Title>My Resume</Modal.Title>
                                     </Modal.Header>
                                     <Modal.Body>
-                                        <embed src={mehulResumePdf} width="100%" height="100%" type="application/pdf"/>
+                                        <embed src={aboutArray[0].resumeLink} width="100%" height="100%" type="application/pdf"/>
                                     </Modal.Body>
                                     <Modal.Footer>
                                     <Button style={{color: isHovering ? 'white' : '#00cdac'}} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} target="_blank" variant="outline-info" onClick={download}>

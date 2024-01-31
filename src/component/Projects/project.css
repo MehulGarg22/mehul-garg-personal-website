@@ -1,7 +1,9 @@
 #Projects .projectImages{
     margin-top: 20px;
-    margin-left:40%;
-    
+    margin-left:10%;
+    padding-bottom: 100px;
+    width: 80%;
+    height: 100%;
     @media (max-width: 767px) {
         margin-top:0;
         margin-left:0%;
@@ -10,4 +12,13 @@
         margin-top:0;
         margin-left:0%;
     }
+}
+#Projects .projectLiveButtonContainer{
+    display: flex;
+}
+#Projects .projectLiveButtonContainer .documentImage .projectImages{
+    margin-top: 1.2%;
+    margin-left: 20px;
+    width: 4%;
+    cursor: pointer;
 }

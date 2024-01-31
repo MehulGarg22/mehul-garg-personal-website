@@ -46,6 +46,8 @@ import githubsvg from '../../assests/githubsvg.png';
 import xsvg from '../../assests/xsvg.png';
 import instagramsvg from '../../assests/instagramsvg.png';
 import mailsvg from '../../assests/mailsvg.png';
+import mehulResumePdf from '../../assests/Mehul-Garg-Software-Engineer-1.4YoE-Resume.pdf'
+
 
 export  let array=[
     {
@@ -77,6 +79,12 @@ export  let array=[
     //     imageSource: contact
     // },
  ]
+
+export let aboutArray=[
+    {
+        resumeLink: mehulResumePdf
+    }
+]
 
 export let homeArray=[
     {
@@ -334,6 +342,8 @@ export let experienceArray=[
 ]
 
 
+
+
 export let educationArray=[
     {
         date: "2018- 2022",
@@ -353,4 +363,27 @@ export let educationArray=[
         universityOrBoardName:"Central Board of Secondary Education",
         universityOrBoardNameNext: "(A Central University)"
     }
+]
+
+export let projectArray=[
+    {
+        description: "Trishul Technical Fest",
+        urlLink:"https://trishulfest.netlify.app/"
+    },
+    {
+        description: "Star Troopers",
+        urlLink:"https://mehulgarg22.github.io/Star-Troopers/"
+    },
+    {
+        description: "Cricket Fantasy Game",
+        urlLink:"https://github.com/MehulGarg22/Cricket_Fantasy_Game"
+    },
+    {
+        description: "Algo Engineering",
+        urlLink:"https://github.com/MehulGarg22/Algo_Engineering"
+    },
+    {
+        description: "Color Picker",
+        urlLink:"https://colorpiker.netlify.app/"
+    },
 ]
