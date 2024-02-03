@@ -1,6 +1,5 @@
 import React from "react";
 import Heading from "../Heading/heading";
-import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import { certificateArray } from "../constant.js/constant";
@@ -9,7 +8,7 @@ import './certificate.css'
 export default function Certificate(){
 
     const certificateLink=(props)=>{
-        window.location.href=`${props}`
+        window.open(props, "_blank")
     }
 
     return (
