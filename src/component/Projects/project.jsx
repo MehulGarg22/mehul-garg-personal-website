@@ -15,15 +15,15 @@ import {projectArray} from '../constant.js/constant';
 
 export default function Projects(){
     const [resumePopUp, setResumePopUp]=useState(false);
-    const [isHovering, setIsHovering] = useState(false);
+    // const [isHovering, setIsHovering] = useState(false);
 
-    const handleMouseEnter = () => {
-      setIsHovering(true);
-    };
+    // const handleMouseEnter = () => {
+    //   setIsHovering(true);
+    // };
   
-    const handleMouseLeave = () => {
-      setIsHovering(false);
-    };  
+    // const handleMouseLeave = () => {
+    //   setIsHovering(false);
+    // };  
 
     const trishulUrlNavigate=()=>{
         window.open(projectArray[0].urlLink, "_blank")
@@ -44,7 +44,7 @@ export default function Projects(){
     const handleResumeClick=()=>{
         setResumePopUp(true)
     }
-    const handleClose=()=>setResumePopUp(false)
+    // const handleClose=()=>setResumePopUp(false)
 
     return(
         <div id="Projects">
@@ -64,7 +64,7 @@ export default function Projects(){
                         </p>
                         <div className="projectLiveButtonContainer">
                             <span>
-                                <Button style={{color: isHovering ? 'white' : '#00cdac'}} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} className="button" onClick={trishulUrlNavigate} variant="outline-info">See Live</Button>        
+                                <Button className="button" onClick={trishulUrlNavigate} variant="outline-info">See Live</Button>        
                             </span>
                             <span>
                                 <a className="documentImage" onClick={handleResumeClick}>
@@ -90,7 +90,7 @@ export default function Projects(){
                         </p>
                         <div className="projectLiveButtonContainer">
                             <span>
-                                <Button style={{color: isHovering ? 'white' : '#00cdac'}} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} className="button" onClick={starTrooperUrlNavigate} variant="outline-info">See Live</Button>        
+                                <Button className="button" onClick={starTrooperUrlNavigate} variant="outline-info">See Live</Button>        
                             </span>
                             <span>
                                 <a className="documentImage" onClick={handleResumeClick}>
@@ -116,7 +116,7 @@ export default function Projects(){
                         </p>
                         <div className="projectLiveButtonContainer">
                             <span>
-                                <Button style={{color: isHovering ? 'white' : '#00cdac'}} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} className="button" onClick={cricketFantasyUrlNavigate} variant="outline-info">Repository</Button>        
+                                <Button className="button" onClick={cricketFantasyUrlNavigate} variant="outline-info">Repository</Button>        
                             </span>
                             <span>
                                 <a className="documentImage" onClick={handleResumeClick}>
@@ -141,7 +141,7 @@ export default function Projects(){
                         </p>
                         <div className="projectLiveButtonContainer">
                             <span>
-                                <Button style={{color: isHovering ? 'white' : '#00cdac'}} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} className="button" onClick={algoEnggUrlNavigate} variant="outline-info">Repository</Button>        
+                                <Button  className="button" onClick={algoEnggUrlNavigate} variant="outline-info">Repository</Button>        
                             </span>
                             <span>
                                 <a className="documentImage" onClick={handleResumeClick}>
@@ -167,7 +167,7 @@ export default function Projects(){
                         </p>
                         <div className="projectLiveButtonContainer">
                             <span>
-                                <Button style={{color: isHovering ? 'white' : '#00cdac'}} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} className="button" onClick={colorPickerUrlNavigate} variant="outline-info">See Live</Button>        
+                                <Button  className="button" onClick={colorPickerUrlNavigate} variant="outline-info">See Live</Button>        
                             </span>
                             <span>
                                 <a className="documentImage" onClick={handleResumeClick}>

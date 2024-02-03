@@ -6,19 +6,22 @@
     height: 100%;
     @media (max-width: 767px) {
         margin-top:0;
-        margin-left:0%;
+        margin-left:15%;
+        margin-top: 15%;
     }
     @media (max-width: 400px) {
         margin-top:0;
-        margin-left:0%;
+        margin-left:15%;
+        margin-top: 15%;
     }
 }
 #Projects .projectLiveButtonContainer{
     display: flex;
 }
+
 #Projects .projectLiveButtonContainer .documentImage .projectImages{
     margin-top: 1.2%;
     margin-left: 20px;
     width: 4%;
-    cursor: pointer;
+    cursor: pointer;   
 }

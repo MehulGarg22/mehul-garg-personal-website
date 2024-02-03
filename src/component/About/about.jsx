@@ -7,6 +7,7 @@ import { aboutArray } from "../constant.js/constant";
 import Heading from '../Heading/heading';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
+import mehulResumePdf from '../../assests/Mehul-Garg-Software-Engineer-1.4YoE-Resume.pdf'
 
 export default function About(){
     const [resumePopUp, setResumePopUp]=useState(false);
@@ -20,6 +21,11 @@ export default function About(){
     const download=()=>{
         window.open(aboutArray[0].resumeLink, "_blank")
     }
+
+    const downloadCoverLetter=()=>{
+        window.open(aboutArray[0].coverLetterLink, "_blank")
+    }
+
     const [isHovering, setIsHovering] = useState(false);
 
     const handleMouseEnter = () => {
@@ -53,11 +59,14 @@ export default function About(){
                                     <Modal.Title>My Resume</Modal.Title>
                                     </Modal.Header>
                                     <Modal.Body>
-                                        <embed src={aboutArray[0].resumeLink} width="100%" height="100%" type="application/pdf"/>
+                                        <embed src={mehulResumePdf} width="100%" height="100%" type="application/pdf"/>
                                     </Modal.Body>
                                     <Modal.Footer>
-                                    <Button style={{color: isHovering ? 'white' : '#00cdac'}} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} target="_blank" variant="outline-info" onClick={download}>
+                                    <Button style={{backgroundColor: '#00cdac',color: 'white'}} target="_blank" variant="outline-info" onClick={download}>
                                         Download Resume
+                                    </Button>
+                                    <Button style={{color: isHovering ? 'white' : '#00cdac'}} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} target="_blank" variant="outline-info" onClick={downloadCoverLetter}>
+                                        Cover Letter
                                     </Button>
                                     <Button variant="outline-secondary" onClick={handleClose}>
                                         Close
