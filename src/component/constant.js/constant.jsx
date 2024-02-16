@@ -48,6 +48,8 @@ import instagramsvg from '../../assests/instagramsvg.png';
 import mailsvg from '../../assests/mailsvg.png';
 import modernReactwithRedux from '../../assests/MehulFullStack.jpg'
 import awsdeveloperassociatecertificate from '../../assests/Mehul-Garg-AWS-Developer-Associate-Training-Certificate.png';
+import leetcode from '../../assests/leetcode.png'
+import gfg from '../../assests/gfg.svg';
 
 export  let array=[
     {
@@ -91,18 +93,32 @@ export let homeArray=[
     {
         imageSource: linkedin,
         socialLink: "https://www.linkedin.com/in/mehulgarg22/",
+        description:"Linkedin"
     },
     {
         imageSource: github,
         socialLink: "https://github.com/MehulGarg22",
+        description:"Github"
     },
     {
         imageSource: twitter,
         socialLink: "https://twitter.com/MehulGarg22",
+        description:"Twitter"
     },
     {
         imageSource: mail,
         socialLink: "mailto: mehul.garg104@gmail.com",
+        description:"Gmail"
+    },
+    {
+        imageSource: leetcode,
+        socialLink: "https://leetcode.com/MehulGarg/",
+        description:"Leetcode"
+    },
+    {
+        imageSource: gfg,
+        socialLink: "https://auth.geeksforgeeks.org/user/mehulgarg3",
+        description:"Geek for Geek"
     },
 ]
 

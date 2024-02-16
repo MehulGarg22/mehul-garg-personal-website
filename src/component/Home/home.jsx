@@ -3,10 +3,16 @@ import NavbarMain from "../navbar/navbar";
 import Button from 'react-bootstrap/Button';
 import { homeArray } from "../constant.js/constant";
 import './home.css'
+import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
+import Tooltip from 'react-bootstrap/Tooltip';
 
 export default function Home(){
     const [isHovering, setIsHovering] = useState(false);
-
+    const renderTooltip = (props) => (
+        <Tooltip id="button-tooltip" {...props}>
+          {props}
+        </Tooltip>
+    );
     const handleMouseEnter = () => {
       setIsHovering(true);
     };
@@ -30,13 +36,25 @@ export default function Home(){
                     {
                         homeArray.map((item)=>{
                             return<a href={item.socialLink} target="_blank">
-                                <img className="image" src={item.imageSource} />
-                            </a>
+                                    <OverlayTrigger
+                                        placement="top"
+                                        className="overlay"
+                                        delay={{ show: 250, hide: 400 }}
+                                        overlay={renderTooltip(item.description)}
+                                    >
+                                        <img className="image" src={item.imageSource} />
+                                    </OverlayTrigger>
+                                </a>
+                            
+                            
+                            
                         })
                     }
                 </div>
                 <Button style={{color: isHovering ? 'white' : '#00cdac'}} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} className="button" onClick={urlNavigate} variant="outline-info">Know More</Button>        
             </div>
+            <br/>
+            <br/>
       </div>
     );
 }
