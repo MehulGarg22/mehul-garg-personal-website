@@ -46,6 +46,8 @@ import githubsvg from '../../assests/githubsvg.png';
 import xsvg from '../../assests/xsvg.png';
 import instagramsvg from '../../assests/instagramsvg.png';
 import mailsvg from '../../assests/mailsvg.png';
+import modernReactwithRedux from '../../assests/MehulFullStack.jpg'
+import awsdeveloperassociatecertificate from '../../assests/Mehul-Garg-AWS-Developer-Associate-Training-Certificate.png';
 
 export  let array=[
     {
@@ -277,17 +279,32 @@ export let certificateArray=[
     {
         imageSource: awscloudpractitioner,
         imageAlt: "AWS Certified Cloud Practitioner",
-        imageLink:"https://drive.google.com/file/d/1uPXEFiPTCyzvi_Nv0mSbWbwF5Voh7Od2/view?usp=sharing"
+        imageLink:"https://drive.google.com/file/d/1uPXEFiPTCyzvi_Nv0mSbWbwF5Voh7Od2/view?usp=sharing",
+        description:"AWS Certified Cloud Practitioner"
+    },
+    {
+        imageSource: awsdeveloperassociatecertificate,
+        imageAlt: "Mehul-Garg-AWS-Developer-Associate-Training-Certificate",
+        imageLink:"https://drive.google.com/file/d/1zwA-frR1FX747Zx8KHfErb6q91AvVbS_/view?usp=sharing",
+        description:"AWS Developer Associate training"
+    },
+    {
+        imageSource: modernReactwithRedux,
+        imageAlt: "Modern React with redux",
+        imageLink:"https://drive.google.com/file/d/1Agt1sM3_a7NRCQxkkkh3x2Fci_LOdUpX/view?usp=sharing",
+        description:"Modern react with redux"
     },
     {
         imageSource: googleTech,
         imageAlt: "GoogleTech",
-        imageLink:"https://drive.google.com/file/d/1eXfdL7nhd-boXJ3k5tZ8B0G-KmNBb5ak/view?usp=sharing"
+        imageLink:"https://drive.google.com/file/d/1eXfdL7nhd-boXJ3k5tZ8B0G-KmNBb5ak/view?usp=sharing",
+        description:"Google Technical Support Fundamental"
     },
     {
         imageSource: internshala,
         imageAlt: "Internshala",
-        imageLink:"https://drive.google.com/file/d/1s5zxSOdamFeLKHR4lDds5vxsN2cNURV4/view?usp=sharing"
+        imageLink:"https://drive.google.com/file/d/1s5zxSOdamFeLKHR4lDds5vxsN2cNURV4/view?usp=sharing",
+        description:"Programming with python"
     },
 ]
 

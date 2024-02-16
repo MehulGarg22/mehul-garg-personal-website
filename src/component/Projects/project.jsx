@@ -66,11 +66,11 @@ export default function Projects(){
                             <span>
                                 <Button className="button" onClick={trishulUrlNavigate} variant="outline-info">See Live</Button>        
                             </span>
-                            <span>
+                            {/* <span>
                                 <a className="documentImage" onClick={handleResumeClick}>
                                     <img className="projectImages" height="auto" width="250px" src={documentImage} alt="Profile Image" />
                                 </a>
-                            </span>
+                            </span> */}
                         </div>
                     </div>
                 </Col>
@@ -92,11 +92,11 @@ export default function Projects(){
                             <span>
                                 <Button className="button" onClick={starTrooperUrlNavigate} variant="outline-info">See Live</Button>        
                             </span>
-                            <span>
+                            {/* <span>
                                 <a className="documentImage" onClick={handleResumeClick}>
                                     <img className="projectImages" height="auto" width="250px" src={documentImage} alt="Profile Image" />
                                 </a>
-                            </span>
+                            </span> */}
                         </div>
                     </div>
                 </Col>
@@ -118,11 +118,11 @@ export default function Projects(){
                             <span>
                                 <Button className="button" onClick={cricketFantasyUrlNavigate} variant="outline-info">Repository</Button>        
                             </span>
-                            <span>
+                            {/* <span>
                                 <a className="documentImage" onClick={handleResumeClick}>
                                     <img className="projectImages" height="auto" width="250px" src={documentImage} alt="Profile Image" />
                                 </a>
-                            </span>
+                            </span> */}
                         </div>
                     </div>
                 </Col>
@@ -143,11 +143,11 @@ export default function Projects(){
                             <span>
                                 <Button  className="button" onClick={algoEnggUrlNavigate} variant="outline-info">Repository</Button>        
                             </span>
-                            <span>
+                            {/* <span>
                                 <a className="documentImage" onClick={handleResumeClick}>
                                     <img className="projectImages" height="auto" width="250px" src={documentImage} alt="Profile Image" />
                                 </a>
-                            </span>
+                            </span> */}
                         </div>
                     </div>
                 </Col>
@@ -169,11 +169,11 @@ export default function Projects(){
                             <span>
                                 <Button  className="button" onClick={colorPickerUrlNavigate} variant="outline-info">See Live</Button>        
                             </span>
-                            <span>
+                            {/* <span>
                                 <a className="documentImage" onClick={handleResumeClick}>
                                     <img className="projectImages" height="auto" width="250px" src={documentImage} alt="Profile Image" />
                                 </a>
-                            </span>
+                            </span> */}
                         </div>
                     </div>
                 </Col>
