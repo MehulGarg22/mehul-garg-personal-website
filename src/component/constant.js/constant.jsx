@@ -50,6 +50,7 @@ import modernReactwithRedux from '../../assests/MehulFullStack.jpg'
 import awsdeveloperassociatecertificate from '../../assests/Mehul-Garg-AWS-Developer-Associate-Training-Certificate.png';
 import leetcode from '../../assests/leetcode.png'
 import gfg from '../../assests/gfg.svg';
+import medium from '../../assests/medium.png';
 
 export  let array=[
     {
@@ -119,6 +120,11 @@ export let homeArray=[
         imageSource: gfg,
         socialLink: "https://auth.geeksforgeeks.org/user/mehulgarg3",
         description:"Geek for Geek"
+    },
+    {
+        imageSource: medium,
+        socialLink: "https://medium.com/@mehulgarg22",
+        description:"Medium.com"
     },
 ]
 
