@@ -5,9 +5,13 @@ import { homeArray } from "../constant.js/constant";
 import './home.css'
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Tooltip from 'react-bootstrap/Tooltip';
+import useAnalyticsEventTracker from './useAnalyticsEventTracker';
 
 export default function Home(){
     const [isHovering, setIsHovering] = useState(false);
+
+    const gaEventTracker = useAnalyticsEventTracker('Contact us');
+
     const renderTooltip = (props) => (
         <Tooltip id="button-tooltip" {...props}>
           {props}
@@ -35,7 +39,7 @@ export default function Home(){
                 <div className="linkContainer">
                     {
                         homeArray.map((item)=>{
-                            return<a href={item.socialLink} target="_blank">
+                            return<a href={item.socialLink} onClick={()=>gaEventTracker(`${item.description}`)}  target="_blank">
                                     <OverlayTrigger
                                         placement="top"
                                         className="overlay"
