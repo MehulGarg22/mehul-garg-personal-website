@@ -7,7 +7,7 @@ import { aboutArray } from "../constant.js/constant";
 import Heading from '../Heading/heading';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
-import mehulResumePdf from '../../assests/Mehul-Garg-Software-Engineer-1.4YoE-Resume.pdf'
+import mehulResumePdf from '../../assests/Mehul_Garg_Software_Engineer_Fullstack_1.7YoE_Resume.pdf'
 
 export default function About(){
     const [resumePopUp, setResumePopUp]=useState(false);
