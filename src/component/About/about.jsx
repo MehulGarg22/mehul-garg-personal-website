@@ -7,7 +7,7 @@ import { aboutArray } from "../constant.js/constant";
 import Heading from '../Heading/heading';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
-import mehulResumePdf from '../../assests/Mehul_Garg_Software_Engineer_1.9YoE_Resume.pdf'
+import mehulResumePdf from '../../assests/Mehul_Garg_Software_Engineer_2YoE_Resume.pdf'
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Tooltip from 'react-bootstrap/Tooltip';
 
@@ -75,12 +75,26 @@ export default function About(){
                                         <embed src={mehulResumePdf} width="100%" height="100%" type="application/pdf"/>
                                     </Modal.Body>
                                     <Modal.Footer>
-                                    <Button style={{backgroundColor: '#00cdac',color: 'white'}} target="_blank" variant="outline-info" onClick={download}>
-                                        Download Resume
-                                    </Button>
-                                    <Button style={{color: isHovering ? 'white' : '#00cdac'}} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} target="_blank" variant="outline-info" onClick={downloadCoverLetter}>
-                                        Cover Letter
-                                    </Button>
+                                    <OverlayTrigger
+                                        placement="bottom"
+                                        className="overlay"
+                                        delay={{ show: 250, hide: 400 }}
+                                        overlay={renderTooltip("Click to download my resume")}
+                                    > 
+                                        <Button style={{backgroundColor: '#00cdac',color: 'white'}} target="_blank" variant="outline-info" onClick={download}>
+                                            Download Resume
+                                        </Button>
+                                    </OverlayTrigger>
+                                    <OverlayTrigger
+                                        placement="bottom"
+                                        className="overlay"
+                                        delay={{ show: 250, hide: 400 }}
+                                        overlay={renderTooltip("Click to download cover letter")}
+                                    > 
+                                        <Button style={{color: isHovering ? 'white' : '#00cdac'}} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} target="_blank" variant="outline-info" onClick={downloadCoverLetter}>
+                                            Cover Letter
+                                        </Button>
+                                    </OverlayTrigger>
                                     <Button variant="outline-secondary" onClick={handleClose}>
                                         Close
                                     </Button>

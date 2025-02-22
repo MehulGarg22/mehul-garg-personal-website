@@ -29,7 +29,7 @@ export default function Skills(){
                             <Card>
                                 <Card.Body>
                                 <Card.Title className="titleText"> {skills.heading}</Card.Title>
-                                    <div style={{display:'flex', justifyContent:'space-evenly'}}>
+                                    <div style={{display:'flex', marginTop:'20px' ,justifyContent:'space-evenly'}}>
 
                                         {
                                             skills.programmingLanguage.map((programmingLanguage)=>{

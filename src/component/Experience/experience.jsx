@@ -30,7 +30,7 @@ export default function Experience(){
             <Heading heading={"__Experience__"} />
             <Modal contentClassName="custom-modal-style" show={AirtelInternShipCertificate} onHide={handleClose}>
                 <Modal.Header closeButton>
-                <Modal.Title>Internship Certificate</Modal.Title>
+                <Modal.Title>Airtel Internship Certificate</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
                     <embed src={airtelInternship} width="100%" height="100%" type="application/pdf"/>
@@ -59,7 +59,7 @@ export default function Experience(){
                                             <OverlayTrigger
                                                 placement="bottom"
                                                 className="overlay"
-                                                delay={{ show: 250, hide: 400 }}
+                                                delay={{ show: 20, hide: 40 }}
                                                 overlay={renderTooltip("Click to view Airtel Internship Certificate")}
                                             > 
                                                 <Button className="button" onClick={handleInternshipClick} variant="outline-info">View Certificate</Button>        

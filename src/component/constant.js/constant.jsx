@@ -51,8 +51,12 @@ import awsdeveloperassociatecertificate from '../../assests/Mehul-Garg-AWS-Devel
 import leetcode from '../../assests/leetcode.png'
 import gfg from '../../assests/gfg.svg';
 import medium from '../../assests/medium.png';
+import reactbootstrap from '../../assests/react_bootstrap.svg';
+import antd from '../../assests/ant_design_logo.svg';
 import generativeAI from '../../assests/Generative AI Certificate.png'
 import promptEngineering from '../../assests/Prompt Engineering Certificate.png'
+import chartjs from '../../assests/chartjs.ico';
+import materialui from '../../assests/marteialUI.svg'
 
 export  let array=[
     {
@@ -83,7 +87,7 @@ export  let array=[
     //     text: "Contact",
     //     imageSource: contact
     // },
- ]
+]
 
 export let aboutArray=[
     {
@@ -129,7 +133,6 @@ export let homeArray=[
         description:"Medium.com"
     },
 ]
-
 
 export let skillsArray=[
     {
@@ -296,6 +299,31 @@ export let skillsArray=[
                 image: s3
             }
         ]
+    },
+    {
+        heading:"Library",
+        programmingLanguage:[
+            {
+                imageAlt:"ReactBootstrap",
+                descirption: "React Bootstrap",
+                image: reactbootstrap
+            },
+            {
+                imageAlt:"AntDesign",
+                descirption: "Ant Design",
+                image: antd
+            },
+            {
+                imageAlt:"Chart.js",
+                descirption: "Chart.js",
+                image: chartjs
+            },
+            {
+                imageAlt:"MaterialUI",
+                descirption: "Material UI",
+                image: materialui
+            }
+        ]
     }
 ]
 
@@ -377,7 +405,6 @@ export let footerArray=[
     }
 ]
 
-
 export let experienceArray=[
     {
         date: "September 2022- Present",
@@ -393,9 +420,6 @@ export let experienceArray=[
         certificate: "https://drive.google.com/file/d/1zj2Wz29O_KdMGf8NRrwC7AXPEVkIAD7V/view?usp=sharing"
     }
 ]
-
-
-
 
 export let educationArray=[
     {
