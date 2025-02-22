@@ -8,6 +8,8 @@ import Heading from '../Heading/heading';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import mehulResumePdf from '../../assests/Mehul_Garg_Software_Engineer_1.9YoE_Resume.pdf'
+import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
+import Tooltip from 'react-bootstrap/Tooltip';
 
 export default function About(){
     const [resumePopUp, setResumePopUp]=useState(false);
@@ -35,7 +37,11 @@ export default function About(){
     const handleMouseLeave = () => {
       setIsHovering(false);
     };  
-
+    const renderTooltip = (props) => (
+        <Tooltip id="button-tooltip" {...props}>
+          {props}
+        </Tooltip>
+    );
     return(
         <div id="About">
             <Heading heading={"__About__"}/>
@@ -52,7 +58,14 @@ export default function About(){
                             </p>
                             <div className="photoTextFlexingButtons">
                                 <div className="button1">
-                                    <Button className="button" onClick={handleResumeClick} variant="outline-info">Resume</Button>        
+                                    <OverlayTrigger
+                                        placement="bottom"
+                                        className="overlay"
+                                        delay={{ show: 250, hide: 400 }}
+                                        overlay={renderTooltip("Click to view my Resume")}
+                                    > 
+                                        <Button className="button" onClick={handleResumeClick} variant="outline-info">Resume</Button>
+                                    </ OverlayTrigger>        
                                 </div>
                                 <Modal contentClassName="custom-modal-style" show={resumePopUp} onHide={handleClose}>
                                     <Modal.Header closeButton>
@@ -74,7 +87,14 @@ export default function About(){
                                     </Modal.Footer>
                                 </Modal>
                                 <div className="button2">
-                                    <Button className="button" onClick={()=>education("#Education")} variant="outline-info">Education</Button>        
+                                    <OverlayTrigger
+                                        placement="bottom"
+                                        className="overlay"
+                                        delay={{ show: 250, hide: 400 }}
+                                        overlay={renderTooltip("Click to go to my Education section")}
+                                    > 
+                                        <Button className="button" onClick={()=>education("#Education")} variant="outline-info">Education</Button>  
+                                    </ OverlayTrigger>      
                                 </div>
                             </div>
                         </div>

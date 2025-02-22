@@ -51,6 +51,8 @@ import awsdeveloperassociatecertificate from '../../assests/Mehul-Garg-AWS-Devel
 import leetcode from '../../assests/leetcode.png'
 import gfg from '../../assests/gfg.svg';
 import medium from '../../assests/medium.png';
+import generativeAI from '../../assests/Generative AI Certificate.png'
+import promptEngineering from '../../assests/Prompt Engineering Certificate.png'
 
 export  let array=[
     {
@@ -299,16 +301,28 @@ export let skillsArray=[
 
 export let certificateArray=[
     {
+        imageSource: awsdeveloperassociatecertificate,
+        imageAlt: "Mehul-Garg-AWS-Developer-Associate-Training-Certificate",
+        imageLink:"https://drive.google.com/file/d/1JA_w0EZEZO2R6ApGen6Ab7aHzfQmVTkG/view?usp=sharing",
+        description:"AWS Developer Associate training"
+    },
+    {
         imageSource: awscloudpractitioner,
         imageAlt: "AWS Certified Cloud Practitioner",
         imageLink:"https://drive.google.com/file/d/1uPXEFiPTCyzvi_Nv0mSbWbwF5Voh7Od2/view?usp=sharing",
         description:"AWS Certified Cloud Practitioner"
     },
     {
-        imageSource: awsdeveloperassociatecertificate,
-        imageAlt: "Mehul-Garg-AWS-Developer-Associate-Training-Certificate",
-        imageLink:"https://drive.google.com/file/d/1zwA-frR1FX747Zx8KHfErb6q91AvVbS_/view?usp=sharing",
-        description:"AWS Developer Associate training"
+        imageSource: promptEngineering,
+        imageAlt: "Prompt Engineeering",
+        imageLink:"https://drive.google.com/file/d/1GHQy4xsRL5WH-IhV1ReWbekBB8zFhn3f/view?usp=sharing",
+        description:"Prompt Engineeering"
+    },
+    {
+        imageSource: generativeAI,
+        imageAlt: "Generative AI",
+        imageLink:"https://drive.google.com/file/d/1Xx_Lli8ofK8PjyPXhHnToqkmc1Xakr1n/view?usp=sharing",
+        description:"Generative AI"
     },
     {
         imageSource: modernReactwithRedux,
@@ -366,16 +380,17 @@ export let footerArray=[
 
 export let experienceArray=[
     {
-        date: "2022- present",
+        date: "September 2022- Present",
         companyName: "Tata Consultancy Services Ltd.",
         position:"Software Engineer",
         workDescription: ""
     },
     {
-        date: "September 2021- June 2022",
+        date: "22 September 2021- 22 March 2022",
         companyName: "Airtel Digital",
         position:"Software Development Engineer Intern",
-        workDescription: ""
+        workDescription: "",
+        certificate: "https://drive.google.com/file/d/1zj2Wz29O_KdMGf8NRrwC7AXPEVkIAD7V/view?usp=sharing"
     }
 ]
 

@@ -52,7 +52,15 @@ export default function Home(){
                         })
                     }
                 </div>
-                <Button style={{color: isHovering ? 'white' : '#00cdac'}} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} className="button" onClick={urlNavigate} variant="outline-info">Know More</Button>        
+                <OverlayTrigger
+                    placement="bottom"
+                    className="overlay"
+                    delay={{ show: 250, hide: 400 }}
+                    overlay={renderTooltip("Click to know more about my professional journey")}
+                >
+                    <Button style={{color: isHovering ? 'white' : '#00cdac'}} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} className="button" onClick={urlNavigate} variant="outline-info">Know More</Button>        
+                </OverlayTrigger>
+            
             </div>
             <br/>
             <br/>
