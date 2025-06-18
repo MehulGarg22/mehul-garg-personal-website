@@ -57,6 +57,8 @@ import generativeAI from '../../assests/Generative AI Certificate.png'
 import promptEngineering from '../../assests/Prompt Engineering Certificate.png'
 import chartjs from '../../assests/chartjs.ico';
 import materialui from '../../assests/marteialUI.svg'
+import tailwindcss from '../../assests/tailwindcss.svg'
+
 
 export  let array=[
     {
@@ -322,7 +324,12 @@ export let skillsArray=[
                 imageAlt:"MaterialUI",
                 descirption: "Material UI",
                 image: materialui
-            }
+            },
+            {
+                imageAlt:"tailwindcss",
+                descirption: "Tailwind CSS",
+                image: tailwindcss
+            },
         ]
     }
 ]
