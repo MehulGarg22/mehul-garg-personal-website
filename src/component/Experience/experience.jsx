@@ -8,7 +8,7 @@ import WorkOutlineIcon from '@mui/icons-material/WorkOutline';
 import { experienceArray } from "../constant.js/constant";
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
-import airtelInternship from '../../assests/Mehul_Garg_Airtel_Internship_Certificate.pdf'
+import airtelInternship from '../../asset/Mehul_Garg_Airtel_Internship_Certificate.pdf'
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Tooltip from 'react-bootstrap/Tooltip';
 

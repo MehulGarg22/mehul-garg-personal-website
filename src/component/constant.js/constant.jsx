@@ -1,63 +1,63 @@
-import aboutme from '../../assests/Aboutme.png'
-import certificate from '../../assests/certificate.png'
-import contact from '../../assests/contact.png'
-import education from '../../assests/Education.png'
-import home from '../../assests/Home.png'
-import project from '../../assests/project.png'
-import skills from '../../assests/Skills.png';
-import linkedin from '../../assests/linkedin.png';
-import twitter from '../../assests/twitter.png';
-import github from '../../assests/github.png';
-import mail from '../../assests/gmail.png';
+import aboutme from '../../asset/Aboutme.png'
+import certificate from '../../asset/certificate.png'
+import contact from '../../asset/contact.png'
+import education from '../../asset/Education.png'
+import home from '../../asset/Home.png'
+import project from '../../asset/project.png'
+import skills from '../../asset/Skills.png';
+import linkedin from '../../asset/linkedin.png';
+import twitter from '../../asset/twitter.png';
+import github from '../../asset/github.png';
+import mail from '../../asset/gmail.png';
 
-import c from '../../assests/C.png'
-import cplus from '../../assests/C++.png'
-import html from '../../assests/html5.png'
-import css from '../../assests/CSS3.png'
-import js from '../../assests/JS.png'
-import python from '../../assests/Python.png'
-import sql from '../../assests/SQL.png';
-import react from '../../assests/React.png';
-import node from '../../assests/Nodejs.png';
-import boostrap from '../../assests/bootstrap.png';
-import redux from '../../assests/Redux.png';
-import yarn from '../../assests/yarn.png'
-import mysql from '../../assests/MySQL.png'
-import postgresql from '../../assests/PostgreSQL.png'
-import mongodb from '../../assests/MongoDb.png'
-import npm from '../../assests/npm.png'
-import postman from '../../assests/postman-icon.png';
-import git from '../../assests/git.png';
-import githubs from '../../assests/github.png';
-import vscode from '../../assests/VScode.png';
-import lambda from '../../assests/Lambda.png';
-import dynamodb from '../../assests/DynamoDB.png'
-import apigateway from '../../assests/API Gateway.png'
-import iam from '../../assests/IAM Identity Center.png'
-import amplify from '../../assests/Amplify.png'
-import codecommit from '../../assests/CodeCommit.png';
-import cognito from '../../assests/Cognito.png';
-import s3 from '../../assests/Simple Storage Service.png';
-import awscloudpractitioner from '../../assests/AWS Certified Cloud Practitioner.png';
-import googleTech from '../../assests/GoogleTech.png';
-import internshala from '../../assests/Internshala.png'
-import linkedinsvg from '../../assests/linkedinsvg.png';
-import githubsvg from '../../assests/githubsvg.png';
-import xsvg from '../../assests/xsvg.png';
-import instagramsvg from '../../assests/instagramsvg.png';
-import mailsvg from '../../assests/mailsvg.png';
-import modernReactwithRedux from '../../assests/MehulFullStack.jpg'
-import awsdeveloperassociatecertificate from '../../assests/Mehul-Garg-AWS-Developer-Associate-Training-Certificate.png';
-import leetcode from '../../assests/leetcode.png'
-import gfg from '../../assests/gfg.svg';
-import medium from '../../assests/medium.png';
-import reactbootstrap from '../../assests/react_bootstrap.svg';
-import antd from '../../assests/ant_design_logo.svg';
-import generativeAI from '../../assests/Generative AI Certificate.png'
-import promptEngineering from '../../assests/Prompt Engineering Certificate.png'
-import chartjs from '../../assests/chartjs.ico';
-import materialui from '../../assests/marteialUI.svg'
-import tailwindcss from '../../assests/tailwindcss.svg'
+import c from '../../asset/C.png'
+import cplus from '../../asset/C++.png'
+import html from '../../asset/html5.png'
+import css from '../../asset/CSS3.png'
+import js from '../../asset/JS.png'
+import python from '../../asset/Python.png'
+import sql from '../../asset/SQL.png';
+import react from '../../asset/React.png';
+import node from '../../asset/Nodejs.png';
+import boostrap from '../../asset/bootstrap.png';
+import redux from '../../asset/Redux.png';
+import yarn from '../../asset/yarn.png'
+import mysql from '../../asset/MySQL.png'
+import postgresql from '../../asset/PostgreSQL.png'
+import mongodb from '../../asset/MongoDb.png'
+import npm from '../../asset/npm.png'
+import postman from '../../asset/postman-icon.png';
+import git from '../../asset/git.png';
+import githubs from '../../asset/github.png';
+import vscode from '../../asset/VScode.png';
+import lambda from '../../asset/Lambda.png';
+import dynamodb from '../../asset/DynamoDB.png'
+import apigateway from '../../asset/API Gateway.png'
+import iam from '../../asset/IAM Identity Center.png'
+import amplify from '../../asset/Amplify.png'
+import codecommit from '../../asset/CodeCommit.png';
+import cognito from '../../asset/Cognito.png';
+import s3 from '../../asset/Simple Storage Service.png';
+import awscloudpractitioner from '../../asset/AWS Certified Cloud Practitioner.png';
+import googleTech from '../../asset/GoogleTech.png';
+import internshala from '../../asset/Internshala.png'
+import linkedinsvg from '../../asset/linkedinsvg.png';
+import githubsvg from '../../asset/githubsvg.png';
+import xsvg from '../../asset/xsvg.png';
+import instagramsvg from '../../asset/instagramsvg.png';
+import mailsvg from '../../asset/mailsvg.png';
+import modernReactwithRedux from '../../asset/MehulFullStack.jpg'
+import awsdeveloperassociatecertificate from '../../asset/Mehul-Garg-AWS-Developer-Associate-Training-Certificate.png';
+import leetcode from '../../asset/leetcode.png'
+import gfg from '../../asset/gfg.svg';
+import medium from '../../asset/medium.png';
+import reactbootstrap from '../../asset/react_bootstrap.svg';
+import antd from '../../asset/ant_design_logo.svg';
+import generativeAI from '../../asset/Generative AI Certificate.png'
+import promptEngineering from '../../asset/Prompt Engineering Certificate.png'
+import chartjs from '../../asset/chartjs.ico';
+import materialui from '../../asset/marteialUI.svg'
+import tailwindcss from '../../asset/tailwindcss.svg'
 
 
 export  let array=[

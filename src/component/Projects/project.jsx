@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import Button from 'react-bootstrap/Button';
 import './project.css'
-import TrishulWebsite from '../../assests/Trishulwebsite.png';
-import CricketFantasyGame from '../../assests/Cricket Fantasy Game.png';
-import Algorithm from '../../assests/AlgoEngg.png';
-import StarTroppers from '../../assests/StarTroopers.png';
+import TrishulWebsite from '../../asset/Trishulwebsite.png';
+import CricketFantasyGame from '../../asset/Cricket Fantasy Game.png';
+import Algorithm from '../../asset/AlgoEngg.png';
+import StarTroppers from '../../asset/StarTroopers.png';
 import Modal from 'react-bootstrap/Modal';
-import ColorPicker from '../../assests/Color_Picker.png';
-import documentImage from '../../assests/documentation.png';
+import ColorPicker from '../../asset/Color_Picker.png';
+import documentImage from '../../asset/documentation.png';
 import Heading from '../Heading/heading';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
