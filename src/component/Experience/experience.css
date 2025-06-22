@@ -1,17 +1,344 @@
-#Experience .title{
-    font-size: 25px;
-    font-weight: bold;
+/* Experience Container */
+.experience-container {
+    background: linear-gradient(135deg, #02aab0 0%, #00d2ff 100%);
+    min-height: 100vh;
+    padding: 80px 0;
+    position: relative;
+    overflow-x: hidden;
 }
-#Experience{
-    color: white;
-    margin-top: 30px;
-    background-color: #02aab0;
-    background-image: linear-gradient(135 deg, #02aab0 0%, #00cdac 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+
+.experience-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 20% 80%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
+    pointer-events: none;
 }
-.vertical-timeline-element-date{
+
+.experience-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+    z-index: 1;
+}
+
+/* Timeline Wrapper */
+.timeline-wrapper {
+    margin-top: 60px;
+}
+
+/* Timeline Elements */
+.custom-timeline-element .vertical-timeline-element-content {
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.custom-timeline-element .vertical-timeline-element-content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(2, 170, 176, 0.1), transparent);
+    transition: left 0.5s ease;
+}
+
+.custom-timeline-element:hover .vertical-timeline-element-content::before {
+    left: 100%;
+}
+
+.custom-timeline-element:hover .vertical-timeline-element-content {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Timeline Content */
+.timeline-content {
+    padding: 10px;
+}
+
+.company-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #02aab0;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.position-subtitle {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #666;
+    margin-bottom: 15px;
+    font-style: italic;
+}
+
+.work-description {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+/* Timeline Date Styling */
+.timeline-date {
+    color: white !important;
+    font-weight: 600 !important;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    font-size: 1rem !important;
+}
+
+/* Certificate Button */
+.certificate-button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.certificate-button {
+    background: transparent !important;
+    border: 2px solid #02aab0 !important;
+    color: #02aab0 !important;
+    font-weight: 600;
+    padding: 8px 20px;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-size: 0.9rem;
+}
+
+.certificate-button:hover {
+    background: #02aab0 !important;
+    color: white !important;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(2, 170, 176, 0.4);
+}
+
+.certificate-button:focus {
+    box-shadow: 0 0 0 3px rgba(2, 170, 176, 0.25) !important;
+}
+
+/* Modal Styling */
+.custom-modal-style {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.modal-header-custom {
+    background: linear-gradient(135deg, #02aab0, #00d2ff);
     color: white;
- }
-.subtitle{
-    font-size: 15px;
+    border-bottom: none;
+}
+
+.modal-header-custom .modal-title {
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.modal-header-custom .btn-close {
+    filter: brightness(0) invert(1);
+}
+
+.modal-body-custom {
+    padding: 0;
+    background: #f8f9fa;
+}
+
+.pdf-container {
+    width: 100%;
+    height: 600px;
+    border-radius: 0 0 15px 15px;
+    overflow: hidden;
+}
+
+.pdf-embed {
+    border: none;
+    border-radius: 0 0 15px 15px;
+}
+
+/* Tooltip Styling */
+.tooltip {
+    font-size: 0.9rem;
+}
+
+.tooltip-inner {
+    background: #02aab0;
+    color: white;
+    border-radius: 6px;
+    padding: 8px 12px;
+    font-weight: 500;
+}
+
+.tooltip .arrow::before {
+    border-top-color: #02aab0;
+}
+
+/* Timeline Line Override */
+.vertical-timeline::before {
+    background: rgba(255, 255, 255, 0.8) !important;
+    width: 3px !important;
+}
+
+/* Responsive Design */
+@media (max-width: 1170px) {
+    .experience-content {
+        padding: 0 15px;
+    }
+    
+    .timeline-date {
+        font-size: 0.9rem !important;
+    }
+    
+    .vertical-timeline.vertical-timeline--one-column-left .vertical-timeline-element-content,
+    .vertical-timeline.vertical-timeline--one-column-right .vertical-timeline-element-content {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .experience-container {
+        padding: 60px 0;
+    }
+    
+    .experience-content {
+        padding: 0 10px;
+    }
+    
+    .company-title {
+        font-size: 1.2rem;
+    }
+    
+    .position-subtitle {
+        font-size: 1rem;
+    }
+    
+    .work-description {
+        font-size: 0.9rem;
+    }
+    
+    .certificate-button {
+        font-size: 0.8rem;
+        padding: 6px 16px;
+    }
+    
+    .timeline-date {
+        font-size: 0.8rem !important;
+        text-align: center !important;
+    }
+    
+    .pdf-container {
+        height: 400px;
+    }
+    
+    .pdf-embed {
+        height: 400px;
+    }
+    
+    /* Timeline responsive adjustments */
+    .vertical-timeline-element-content {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+    
+    .vertical-timeline-element-date {
+        display: block !important;
+        float: none !important;
+        color: white !important;
+        margin-top: 10px;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .experience-container {
+        padding: 40px 0;
+    }
+    
+    .company-title {
+        font-size: 1.1rem;
+    }
+    
+    .position-subtitle {
+        font-size: 0.95rem;
+    }
+    
+    .work-description {
+        font-size: 0.85rem;
+        line-height: 1.5;
+    }
+    
+    .certificate-button {
+        font-size: 0.75rem;
+        padding: 5px 12px;
+    }
+    
+    .pdf-container {
+        height: 300px;
+    }
+    
+    .pdf-embed {
+        height: 300px;
+    }
+    
+    .timeline-content {
+        padding: 5px;
+    }
+}
+
+/* Animation for Timeline Elements */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.vertical-timeline-element-content {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+/* Scroll Animation */
+.vertical-timeline-element {
+    opacity: 0;
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.vertical-timeline-element:nth-child(1) { animation-delay: 0.1s; }
+.vertical-timeline-element:nth-child(2) { animation-delay: 0.2s; }
+.vertical-timeline-element:nth-child(3) { animation-delay: 0.3s; }
+.vertical-timeline-element:nth-child(4) { animation-delay: 0.4s; }
+.vertical-timeline-element:nth-child(5) { animation-delay: 0.5s; }
+
+/* Print Styles */
+@media print {
+    .experience-container {
+        background: white !important;
+        color: black !important;
+    }
+    
+    .certificate-button {
+        display: none;
+    }
+    
+    .timeline-date {
+        color: black !important;
+    }
 }

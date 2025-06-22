@@ -1,27 +1,264 @@
-#Projects .projectImages{
-    margin-top: 20px;
-    margin-left:10%;
-    padding-bottom: 100px;
-    width: 80%;
-    height: 100%;
-    @media (max-width: 767px) {
-        margin-top:0;
-        margin-left:10%;
-        margin-top: 15%;
-    }
-    @media (max-width: 400px) {
-        margin-top:0;
-        margin-left:10%;
-        margin-top: 15%;
-    }
-}
-#Projects .projectLiveButtonContainer{
-    display: flex;
+/* projects-section - Main container */
+.projects-section {
+    padding: 2rem 0;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    min-height: 100vh;
 }
 
-#Projects .projectLiveButtonContainer .documentImage .projectImages{
-    margin-top: 1.2%;
+/* Project row styling */
+.project-row {
+    margin-bottom: 4rem !important;
+    padding: 2rem;
     margin-left: 20px;
-    width: 4%;
-    cursor: pointer;   
+    margin-right: 20px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-row:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Image container and styling */
+.project-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background: #f8f9fa;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.project-image {
+    max-width: 100%;
+    max-height: 300px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.project-image:hover {
+    transform: scale(1.05);
+}
+
+/* Project content styling */
+.project-content {
+    padding: 1rem;
+}
+
+.project-content h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 0.5rem;
+}
+
+.project-content p {
+    color: #5a6c7d;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+}
+
+/* Project features list */
+.project-features {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 1.5rem;
+}
+
+.project-features li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.8rem;
+    color: #34495e;
+    line-height: 1.5;
+    font-size: 0.95rem;
+}
+
+.project-features li::before {
+    content: "▶";
+    position: absolute;
+    left: 0;
+    color: #3498db;
+    font-weight: bold;
+}
+
+/* Button container */
+.projectLiveButtonContainer {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.button {
+    padding: 0.75rem 1.5rem;
+    font-weight: 600;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    border: 2px solid #17a2b8;
+    background: transparent;
+    color: #17a2b8;
+}
+
+.button:hover {
+    background: #17a2b8;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(23, 162, 184, 0.3);
+}
+
+/* Documentation icon */
+.documentation-icon {
+    transition: transform 0.3s ease;
+    border-radius: 50%;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.documentation-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Responsive breakpoints */
+@media (max-width: 768px) {
+    .projects-section {
+        padding: 1rem 0;
+    }
+    
+    .project-row {
+        margin-bottom: 2rem !important;
+        padding: 1rem;
+    }
+    
+    .project-content h3 {
+        font-size: 1.3rem;
+        text-align: center;
+    }
+    
+    .project-content p {
+        font-size: 0.9rem;
+    }
+    
+    .project-features li {
+        font-size: 0.85rem;
+        margin-bottom: 0.6rem;
+    }
+    
+    .project-image {
+        max-height: 200px;
+    }
+    
+    .projectLiveButtonContainer {
+        justify-content: center;
+    }
+    
+    .button {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .project-row {
+        padding: 0.5rem;
+        margin-bottom: 1.5rem !important;
+    }
+    
+    .project-content {
+        padding: 0.5rem;
+    }
+    
+    .project-content h3 {
+        font-size: 1.2rem;
+    }
+    
+    .project-content p {
+        font-size: 0.85rem;
+    }
+    
+    .project-features li {
+        font-size: 0.8rem;
+    }
+    
+    .project-image {
+        max-height: 150px;
+    }
+    
+    .button {
+        padding: 0.5rem 1rem;
+        font-size: 0.85rem;
+    }
+    
+    .projectLiveButtonContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Large screens */
+@media (min-width: 1200px) {
+    .project-row {
+        padding: 3rem;
+    }
+    
+    .project-content h3 {
+        font-size: 1.8rem;
+    }
+    
+    .project-content p {
+        font-size: 1.1rem;
+    }
+    
+    .project-features li {
+        font-size: 1rem;
+    }
+    
+    .project-image {
+        max-height: 350px;
+    }
+}
+
+/* Animation for smooth transitions on load */
+.project-row {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Alternating layout for visual interest */
+.project-row:nth-child(even) .project-image-col {
+    order: 2;
+}
+
+.project-row:nth-child(even) .project-content {
+    order: 1;
+}
+
+/* Focus states for accessibility */
+.button:focus {
+    outline: 2px solid #17a2b8;
+    outline-offset: 2px;
+}
+
+.documentation-icon:focus {
+    outline: 2px solid #17a2b8;
+    outline-offset: 2px;
 }
