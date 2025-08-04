@@ -41,6 +41,9 @@ export default function Projects(){
     const colorPickerUrlNavigate=()=>{
         window.open(projectArray[4].urlLink, "_blank")
     }
+    const cloudConnectBlogsUrlNavigate=()=>{
+        window.open(projectArray[5].urlLink, "_blank")  
+    }
 
     const handleResumeClick=()=>{
         setResumePopUp(true)
@@ -98,7 +101,7 @@ export default function Projects(){
                             <p><strong>Impact:</strong> Achieved <strong>100% image upload reliability</strong> and improved blog performance by <strong>40%</strong> with optimized DynamoDB queries.</p>
                         </section>
                         <div className="projectLiveButtonContainer">
-                            <Button className="button me-3" onClick={starTrooperUrlNavigate} variant="outline-info">See Live</Button>        
+                            <Button className="button me-3" onClick={cloudConnectBlogsUrlNavigate} variant="outline-info">See Live</Button>        
                             <a className="documentImage" href="https://drive.google.com/file/d/1LLaYK8b43N7M6OvOiHdl6vEwUfGabtI_/view?usp=sharing" target="_blank" rel="noopener noreferrer">
                                 <img className="documentation-icon" height="40" width="40" src={documentImage} alt="Documentation" />
                             </a>

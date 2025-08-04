@@ -470,4 +470,8 @@ export let projectArray=[
         description: "Color Picker",
         urlLink:"https://colorpiker.netlify.app/"
     },
+    {
+        description: "Cloud Connect Blogs",
+        urlLink:"https://connectcloudblogs.netlify.app/"
+    },
 ]
