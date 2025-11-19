@@ -344,7 +344,7 @@ export let certificateArray=[
     {
         imageSource: awscloudpractitioner,
         imageAlt: "AWS Certified Cloud Practitioner",
-        imageLink:"https://drive.google.com/file/d/1uPXEFiPTCyzvi_Nv0mSbWbwF5Voh7Od2/view?usp=sharing",
+        imageLink:"https://cp.certmetrics.com/amazon/en/public/verify/credential/EJ47N2VKWEB4Q0W2",
         description:"AWS Certified Cloud Practitioner"
     },
     {
