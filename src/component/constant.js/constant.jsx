@@ -38,7 +38,7 @@ import amplify from '../../asset/Amplify.png'
 import codecommit from '../../asset/CodeCommit.png';
 import cognito from '../../asset/Cognito.png';
 import s3 from '../../asset/Simple Storage Service.png';
-import awscloudpractitioner from '../../asset/AWS Certified Cloud Practitioner.png';
+import awscloudpractitioner from '../../asset/Mehul Garg AWS Certified Cloud Practitioner.png';
 import googleTech from '../../asset/GoogleTech.png';
 import internshala from '../../asset/Internshala.png'
 import linkedinsvg from '../../asset/linkedinsvg.png';
