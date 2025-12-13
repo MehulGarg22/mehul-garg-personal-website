@@ -38,7 +38,7 @@ export default function About() {
   return (
     <div id="About" aria-labelledby="about-heading">
       <div className="about-heading">
-        <h1 id="about-heading">__About Me__</h1>
+        <h1 id="about-heading" style={{color:'white'}}>__About Me__</h1>
         <p className="about-subtitle">Secure, scalable, product-focused engineering</p>
       </div>
 

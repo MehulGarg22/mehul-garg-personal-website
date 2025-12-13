@@ -48,6 +48,7 @@
 /* Titles */
 .about-heading {
   text-align: center;
+  color: white;
   margin-bottom: clamp(1rem, 2vw, 2rem);
 }
 .about-heading h1 {
