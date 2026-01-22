@@ -7,7 +7,7 @@ import { aboutArray } from "../constant.js/constant";
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import Container from 'react-bootstrap/Container';
-import mehulResumePdf from '../../asset/Mehul_Garg_Software_Engineer_2.9YoE_Resume.pdf';
+import mehulResumePdf from '../../asset/Mehul_Garg_Senior_Software_Engineer_3YoE_Resume.pdf';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Tooltip from 'react-bootstrap/Tooltip';
 
