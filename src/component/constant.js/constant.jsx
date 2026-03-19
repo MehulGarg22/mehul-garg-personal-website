@@ -58,7 +58,8 @@ import promptEngineering from '../../asset/Prompt Engineering Certificate.png'
 import chartjs from '../../asset/chartjs.ico';
 import materialui from '../../asset/marteialUI.svg'
 import tailwindcss from '../../asset/tailwindcss.svg'
-
+import AWSAIUdemyTraining from '../../asset/AWS Certified AI Practitioner Udemy Certificate- Mehul Garg.jpg'
+import AWSCertificateAIPractitioner from '../../asset/Mehul Garg AWS Certified AI Practitioner.png'
 
 export  let array=[
     {
@@ -335,17 +336,31 @@ export let skillsArray=[
 ]
 
 export let certificateArray=[
-    {
-        imageSource: awsdeveloperassociatecertificate,
-        imageAlt: "Mehul-Garg-AWS-Developer-Associate-Training-Certificate",
-        imageLink:"https://drive.google.com/file/d/1JA_w0EZEZO2R6ApGen6Ab7aHzfQmVTkG/view?usp=sharing",
-        description:"AWS Developer Associate training"
-    },
+
+
     {
         imageSource: awscloudpractitioner,
         imageAlt: "AWS Certified Cloud Practitioner",
         imageLink:"https://cp.certmetrics.com/amazon/en/public/verify/credential/EJ47N2VKWEB4Q0W2",
         description:"AWS Certified Cloud Practitioner"
+    },
+    {
+        imageSource: AWSCertificateAIPractitioner,
+        imageAlt: "AWS Certified AI Practitioner",
+        imageLink:"https://drive.google.com/file/d/1_l4Nhe0gV0c4dpbjLTuLFUm2oGE523jy/view?usp=sharing",
+        description:"AWS Certified AI Practitioner"
+    },
+    {
+        imageSource: AWSAIUdemyTraining,
+        imageAlt: "Mehul-Garg-AWS-AI-Practitioner-Udemy-Training-Certificate",
+        imageLink:"https://drive.google.com/file/d/1_l4Nhe0gV0c4dpbjLTuLFUm2oGE523jy/view?usp=sharing",
+        description:"AWS Certified AI Practitioner Udemy Certificate"
+    },
+    {
+        imageSource: awsdeveloperassociatecertificate,
+        imageAlt: "Mehul-Garg-AWS-Developer-Associate-Training-Certificate",
+        imageLink:"https://drive.google.com/file/d/1JA_w0EZEZO2R6ApGen6Ab7aHzfQmVTkG/view?usp=sharing",
+        description:"AWS Developer Associate training"
     },
     {
         imageSource: promptEngineering,
