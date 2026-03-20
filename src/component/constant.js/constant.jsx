@@ -61,7 +61,7 @@ import tailwindcss from '../../asset/tailwindcss.svg'
 import AWSAIUdemyTraining from '../../asset/AWS Certified AI Practitioner Udemy Certificate- Mehul Garg.jpg'
 import AWSCertificateAIPractitioner from '../../asset/Mehul Garg AWS Certified AI Practitioner.png'
 
-export  let array=[
+export let array = [
     {
         text: "About",
         imageSource: aboutme
@@ -92,242 +92,242 @@ export  let array=[
     // },
 ]
 
-export let aboutArray=[
+export let aboutArray = [
     {
         resumeLink: "https://drive.google.com/file/d/1tjWCiwwTzLa4JyKUY0tgeo4TO0YHoQTF/view?usp=sharing",
         coverLetterLink: "https://drive.google.com/file/d/1UUZbT_g20nabaPNk_UWiM166SEFHIiiL/view?usp=sharing"
     }
 ]
 
-export let homeArray=[
+export let homeArray = [
     {
         imageSource: linkedin,
         socialLink: "https://www.linkedin.com/in/mehulgarg22/",
-        description:"Linkedin"
+        description: "Linkedin"
     },
     {
         imageSource: github,
         socialLink: "https://github.com/MehulGarg22",
-        description:"Github"
+        description: "Github"
     },
     {
         imageSource: twitter,
         socialLink: "https://twitter.com/MehulGarg22",
-        description:"Twitter"
+        description: "Twitter"
     },
     {
         imageSource: mail,
         socialLink: "mailto: mehul.garg104@gmail.com",
-        description:"Gmail"
+        description: "Gmail"
     },
     {
         imageSource: leetcode,
         socialLink: "https://leetcode.com/MehulGarg/",
-        description:"Leetcode"
+        description: "Leetcode"
     },
     {
         imageSource: gfg,
         socialLink: "https://auth.geeksforgeeks.org/user/mehulgarg3",
-        description:"Geek for Geek"
+        description: "Geek for Geek"
     },
     {
         imageSource: medium,
         socialLink: "https://medium.com/@mehulgarg22",
-        description:"Medium.com"
+        description: "Medium.com"
     },
 ]
 
-export let skillsArray=[
+export let skillsArray = [
     {
-        heading:"Programming Language",
-        programmingLanguage:[
+        heading: "Programming Language",
+        programmingLanguage: [
             {
-                imageAlt:"C",
+                imageAlt: "C",
                 descirption: "C Programming Language",
                 image: c
             },
             {
-                imageAlt:"Cplus",
+                imageAlt: "Cplus",
                 descirption: "C++",
                 image: cplus
             },
             {
-                imageAlt:"html",
+                imageAlt: "html",
                 descirption: "HTML5",
                 image: html
             },
             {
-                imageAlt:"css",
+                imageAlt: "css",
                 descirption: "CSS3",
                 image: css
             },
             {
-                imageAlt:"js",
+                imageAlt: "js",
                 descirption: "Javascript",
                 image: js
             },
             {
-                imageAlt:"python",
+                imageAlt: "python",
                 descirption: "Python",
                 image: python
             },
             {
-                imageAlt:"sql",
+                imageAlt: "sql",
                 descirption: "SQL",
                 image: sql
             }
         ]
     },
     {
-        heading:"Framework",
-        programmingLanguage:[
+        heading: "Framework",
+        programmingLanguage: [
             {
-                imageAlt:"react",
+                imageAlt: "react",
                 descirption: "React Js",
                 image: react
             },
             {
-                imageAlt:"redux",
+                imageAlt: "redux",
                 descirption: "Redux",
                 image: redux
             },
             {
-                imageAlt:"boostrap",
+                imageAlt: "boostrap",
                 descirption: "Boostrap",
                 image: boostrap
             },
             {
-                imageAlt:"yarn",
+                imageAlt: "yarn",
                 descirption: "Yarn",
                 image: yarn
             },
             {
-                imageAlt:"node",
+                imageAlt: "node",
                 descirption: "Node Js",
                 image: node
             }
         ]
     },
     {
-        heading:"Database",
-        programmingLanguage:[
+        heading: "Database",
+        programmingLanguage: [
             {
-                imageAlt:"MySQL",
+                imageAlt: "MySQL",
                 descirption: "MySQL",
                 image: mysql
             },
             {
-                imageAlt:"postgresql",
+                imageAlt: "postgresql",
                 descirption: "PostgreSQL",
                 image: postgresql
             },
             {
-                imageAlt:"mongodb",
+                imageAlt: "mongodb",
                 descirption: "MongoDb",
                 image: mongodb
             }
         ]
     },
     {
-        heading:"Developer Tools",
-        programmingLanguage:[
+        heading: "Developer Tools",
+        programmingLanguage: [
             {
-                imageAlt:"npm",
+                imageAlt: "npm",
                 descirption: "NPM",
                 image: npm
             },
             {
-                imageAlt:"postman",
+                imageAlt: "postman",
                 descirption: "Postman",
                 image: postman
             },
             {
-                imageAlt:"git",
+                imageAlt: "git",
                 descirption: "Git",
                 image: git
             },
             {
-                imageAlt:"github",
+                imageAlt: "github",
                 descirption: "Github",
                 image: github
             },
             {
-                imageAlt:"vscode",
+                imageAlt: "vscode",
                 descirption: "VS Code",
                 image: vscode
             }
         ]
     },
     {
-        heading:"AWS Services",
-        programmingLanguage:[
+        heading: "AWS Services",
+        programmingLanguage: [
             {
-                imageAlt:"Lambda",
+                imageAlt: "Lambda",
                 descirption: "AWS Lambda",
                 image: lambda
             },
             {
-                imageAlt:"Dynamodb",
+                imageAlt: "Dynamodb",
                 descirption: "AWS DynamoDB",
                 image: dynamodb
             },
             {
-                imageAlt:"apigateway",
+                imageAlt: "apigateway",
                 descirption: "AWS API Gateway",
                 image: apigateway
             },
             {
-                imageAlt:"iam",
+                imageAlt: "iam",
                 descirption: "AWS Identity Access Management",
                 image: iam
             },
             {
-                imageAlt:"amplify",
+                imageAlt: "amplify",
                 descirption: "AWS Amplify",
                 image: amplify
             },
             {
-                imageAlt:"codecommit",
+                imageAlt: "codecommit",
                 descirption: "AWS CodeCommit",
                 image: codecommit
             },
             {
-                imageAlt:"cognito",
+                imageAlt: "cognito",
                 descirption: "AWS Cognito",
                 image: cognito
             },
             {
-                imageAlt:"s3",
+                imageAlt: "s3",
                 descirption: "AWS S3",
                 image: s3
             }
         ]
     },
     {
-        heading:"Library",
-        programmingLanguage:[
+        heading: "Library",
+        programmingLanguage: [
             {
-                imageAlt:"ReactBootstrap",
+                imageAlt: "ReactBootstrap",
                 descirption: "React Bootstrap",
                 image: reactbootstrap
             },
             {
-                imageAlt:"AntDesign",
+                imageAlt: "AntDesign",
                 descirption: "Ant Design",
                 image: antd
             },
             {
-                imageAlt:"Chart.js",
+                imageAlt: "Chart.js",
                 descirption: "Chart.js",
                 image: chartjs
             },
             {
-                imageAlt:"MaterialUI",
+                imageAlt: "MaterialUI",
                 descirption: "Material UI",
                 image: materialui
             },
             {
-                imageAlt:"tailwindcss",
+                imageAlt: "tailwindcss",
                 descirption: "Tailwind CSS",
                 image: tailwindcss
             },
@@ -335,158 +335,162 @@ export let skillsArray=[
     }
 ]
 
-export let certificateArray=[
-
+export let certificateArray = [
+    {
+        imageSource: AWSCertificateAIPractitioner,
+        imageAlt: "AWS Certified AI Practitioner",
+        imageLink: "https://drive.google.com/file/d/1HfPC4p9l5ScDKgNLvMo1KD_U1-Q0Qwqb/view?usp=sharing",
+        description: "AWS Certified AI Practitioner",
+        linkToVerify: "https://cp.certmetrics.com/amazon/en/public/verify/credential/7a2f5d5b1fb24ae7a84ddef778ded049",
+    },
 
     {
         imageSource: awscloudpractitioner,
         imageAlt: "AWS Certified Cloud Practitioner",
-        imageLink:"https://cp.certmetrics.com/amazon/en/public/verify/credential/EJ47N2VKWEB4Q0W2",
-        description:"AWS Certified Cloud Practitioner"
+        imageLink: "https://cp.certmetrics.com/amazon/en/public/verify/credential/EJ47N2VKWEB4Q0W2",
+        description: "AWS Certified Cloud Practitioner",
+        linkToVerify: "https://cp.certmetrics.com/amazon/en/public/verify/credential/EJ47N2VKWEB4Q0W2",
     },
-    {
-        imageSource: AWSCertificateAIPractitioner,
-        imageAlt: "AWS Certified AI Practitioner",
-        imageLink:"https://drive.google.com/file/d/1_l4Nhe0gV0c4dpbjLTuLFUm2oGE523jy/view?usp=sharing",
-        description:"AWS Certified AI Practitioner"
-    },
+
     {
         imageSource: AWSAIUdemyTraining,
         imageAlt: "Mehul-Garg-AWS-AI-Practitioner-Udemy-Training-Certificate",
-        imageLink:"https://drive.google.com/file/d/1_l4Nhe0gV0c4dpbjLTuLFUm2oGE523jy/view?usp=sharing",
-        description:"AWS Certified AI Practitioner Udemy Certificate"
+        imageLink: "https://drive.google.com/file/d/1_l4Nhe0gV0c4dpbjLTuLFUm2oGE523jy/view?usp=sharing",
+        description: "AWS Certified AI Practitioner Udemy Certificate",
+        linkToVerify: "https://www.udemy.com/certificate/UC-787d6292-f47c-4984-9110-61abcb98e46c/"
     },
     {
         imageSource: awsdeveloperassociatecertificate,
         imageAlt: "Mehul-Garg-AWS-Developer-Associate-Training-Certificate",
-        imageLink:"https://drive.google.com/file/d/1JA_w0EZEZO2R6ApGen6Ab7aHzfQmVTkG/view?usp=sharing",
-        description:"AWS Developer Associate training"
+        imageLink: "https://drive.google.com/file/d/1JA_w0EZEZO2R6ApGen6Ab7aHzfQmVTkG/view?usp=sharing",
+        description: "AWS Developer Associate training"
     },
     {
         imageSource: promptEngineering,
         imageAlt: "Prompt Engineeering",
-        imageLink:"https://drive.google.com/file/d/1GHQy4xsRL5WH-IhV1ReWbekBB8zFhn3f/view?usp=sharing",
-        description:"Prompt Engineeering"
+        imageLink: "https://drive.google.com/file/d/1GHQy4xsRL5WH-IhV1ReWbekBB8zFhn3f/view?usp=sharing",
+        description: "Prompt Engineeering"
     },
     {
         imageSource: generativeAI,
         imageAlt: "Generative AI",
-        imageLink:"https://drive.google.com/file/d/1Xx_Lli8ofK8PjyPXhHnToqkmc1Xakr1n/view?usp=sharing",
-        description:"Generative AI"
+        imageLink: "https://drive.google.com/file/d/1Xx_Lli8ofK8PjyPXhHnToqkmc1Xakr1n/view?usp=sharing",
+        description: "Generative AI"
     },
     {
         imageSource: modernReactwithRedux,
         imageAlt: "Modern React with redux",
-        imageLink:"https://drive.google.com/file/d/1Agt1sM3_a7NRCQxkkkh3x2Fci_LOdUpX/view?usp=sharing",
-        description:"Modern react with redux"
+        imageLink: "https://drive.google.com/file/d/1G8zDHVSRunfN2OJPq7o_4Mt-TLuY5trU/view?usp=sharing",
+        description: "Modern react with redux",
+        linkToVerify: "https://www.udemy.com/certificate/UC-53badd63-226f-445e-90cd-a93f69b61ed0/"
     },
     {
         imageSource: googleTech,
         imageAlt: "GoogleTech",
-        imageLink:"https://drive.google.com/file/d/1eXfdL7nhd-boXJ3k5tZ8B0G-KmNBb5ak/view?usp=sharing",
-        description:"Google Technical Support Fundamental"
+        imageLink: "https://drive.google.com/file/d/1eXfdL7nhd-boXJ3k5tZ8B0G-KmNBb5ak/view?usp=sharing",
+        description: "Google Technical Support Fundamental"
     },
     {
         imageSource: internshala,
         imageAlt: "Internshala",
-        imageLink:"https://drive.google.com/file/d/1s5zxSOdamFeLKHR4lDds5vxsN2cNURV4/view?usp=sharing",
-        description:"Programming with python"
+        imageLink: "https://drive.google.com/file/d/1s5zxSOdamFeLKHR4lDds5vxsN2cNURV4/view?usp=sharing",
+        description: "Programming with python"
     },
 ]
 
-export let footerArray=[
+export let footerArray = [
     {
         imageSource: "fa fa-linkedin fa-inverse",
         imageAlt: "Linkedin Icon",
-        imageLink:"https://www.linkedin.com/in/mehulgarg22/",
+        imageLink: "https://www.linkedin.com/in/mehulgarg22/",
         descirption: "LinkedIn"
     },
     {
         imageSource: "fa fa-github fa-inverse",
         imageAlt: "Github Icon",
-        imageLink:"https://github.com/MehulGarg22",
+        imageLink: "https://github.com/MehulGarg22",
         descirption: "Github"
     },
     {
         imageSource: "fa far fa-envelope fa-inverse",
         imageAlt: "Gmail Icon",
-        imageLink:"mailto:mehul.garg104@gmail.com",
+        imageLink: "mailto:mehul.garg104@gmail.com",
         descirption: "Gmail"
     },
     {
         imageSource: "fa fa-twitter fa-inverse",
         imageAlt: "X Icon",
-        imageLink:"https://twitter.com/MehulGarg22",
+        imageLink: "https://twitter.com/MehulGarg22",
         descirption: "X.com"
     },
     {
         imageSource: "fa fab fa-instagram fa-inverse",
         imageAlt: "Instagram Icon",
-        imageLink:"https://www.instagram.com/__mehul_garg__/",
+        imageLink: "https://www.instagram.com/__mehul_garg__/",
         descirption: "Instagram"
     }
 ]
 
-export let experienceArray=[
+export let experienceArray = [
     {
         date: "September 2022- Present",
         companyName: "Tata Consultancy Services Ltd.",
-        position:"Software Engineer",
+        position: "Software Engineer",
         workDescription: ""
     },
     {
         date: "22 September 2021- 22 March 2022",
         companyName: "Airtel Digital",
-        position:"Software Development Engineer Intern",
+        position: "Software Development Engineer Intern",
         workDescription: "",
         certificate: "https://drive.google.com/file/d/1zj2Wz29O_KdMGf8NRrwC7AXPEVkIAD7V/view?usp=sharing"
     }
 ]
 
-export let educationArray=[
+export let educationArray = [
     {
         date: "2018- 2022",
         educationName: "B.Tech, Information Technology",
-        universityOrBoardName:"Hemvati Nandan Bahuguna Garhwal University",
+        universityOrBoardName: "Hemvati Nandan Bahuguna Garhwal University",
         universityOrBoardNameNext: "(A Central University)"
     },
     {
         date: "2017- 2018",
         educationName: "12th (Senior Secondary Examination)",
-        universityOrBoardName:"Central Board of Secondary Education",
+        universityOrBoardName: "Central Board of Secondary Education",
         universityOrBoardNameNext: "(A Central University)"
     },
     {
         date: "2015- 2016",
         educationName: "10th (Secondary Examination)",
-        universityOrBoardName:"Central Board of Secondary Education",
+        universityOrBoardName: "Central Board of Secondary Education",
         universityOrBoardNameNext: "(A Central University)"
     }
 ]
 
-export let projectArray=[
+export let projectArray = [
     {
         description: "Trishul Technical Fest",
-        urlLink:"https://trishulfest.netlify.app/"
+        urlLink: "https://trishulfest.netlify.app/"
     },
     {
         description: "Star Troopers",
-        urlLink:"https://mehulgarg22.github.io/Star-Troopers/"
+        urlLink: "https://mehulgarg22.github.io/Star-Troopers/"
     },
     {
         description: "Cricket Fantasy Game",
-        urlLink:"https://github.com/MehulGarg22/Cricket_Fantasy_Game"
+        urlLink: "https://github.com/MehulGarg22/Cricket_Fantasy_Game"
     },
     {
         description: "Algo Engineering",
-        urlLink:"https://github.com/MehulGarg22/Algo_Engineering"
+        urlLink: "https://github.com/MehulGarg22/Algo_Engineering"
     },
     {
         description: "Color Picker",
-        urlLink:"https://colorpiker.netlify.app/"
+        urlLink: "https://colorpiker.netlify.app/"
     },
     {
         description: "Cloud Connect Blogs",
-        urlLink:"https://connectcloudblogs.netlify.app/"
+        urlLink: "https://connectcloudblogs.netlify.app/"
     },
 ]

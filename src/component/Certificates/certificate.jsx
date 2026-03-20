@@ -9,7 +9,7 @@ import './certificate.css'
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Tooltip from 'react-bootstrap/Tooltip';
 
-export default function Certificate(){
+export default function Certificate() {
     const [selectedCertificate, setSelectedCertificate] = useState(null);
     const [showModal, setShowModal] = useState(false);
 
@@ -36,11 +36,11 @@ export default function Certificate(){
     return (
         <div id="Certificates" className="certificate-container">
             <div className="certificate-content">
-                <Heading heading={"__Certificates__"}/>
-                
+                <Heading heading={"__Certificates__"} />
+
                 {/* Certificate Modal */}
-                <Modal 
-                    show={showModal} 
+                <Modal
+                    show={showModal}
                     onHide={handleClose}
                     size="xl"
                     centered
@@ -56,8 +56,8 @@ export default function Certificate(){
                         {selectedCertificate && (
                             <div className="certificate-modal-content">
                                 <div className="modal-image-container">
-                                    <img 
-                                        src={selectedCertificate.imageSource} 
+                                    <img
+                                        src={selectedCertificate.imageSource}
                                         alt={selectedCertificate.imageAlt}
                                         className="modal-certificate-image"
                                     />
@@ -81,9 +81,18 @@ export default function Certificate(){
                         )}
                     </Modal.Body>
                     <Modal.Footer className="modal-footer-custom">
+                        {selectedCertificate?.linkToVerify && (
+                            <Button
+                                variant="success"
+                                onClick={() => handleExternalLink(selectedCertificate.linkToVerify)}
+                                className="verify-link-btn"
+                            >
+                                ✅ Verify Certificate
+                            </Button>
+                        )}
                         {selectedCertificate?.imageLink && (
-                            <Button 
-                                variant="outline-primary" 
+                            <Button
+                                variant="outline-primary"
                                 onClick={() => handleExternalLink(selectedCertificate.imageLink)}
                                 className="external-link-btn"
                             >
@@ -102,20 +111,23 @@ export default function Certificate(){
                         {
                             certificateArray.map((certificate, index) => (
                                 <Col key={index}>
-                                    <div className="certificate-card">
+                                    <div
+                                        className="certificate-card"
+                                        style={{ animationDelay: `${index * 0.08}s` }}
+                                    >
                                         <OverlayTrigger
                                             placement="top"
                                             delay={{ show: 250, hide: 400 }}
                                             overlay={renderTooltip(certificate.description)}
                                         >
-                                            <div 
+                                            <div
                                                 className="certificate-image-wrapper"
                                                 onClick={() => handleCertificateClick(certificate)}
                                             >
                                                 <div className="certificate-image-container">
-                                                    <img 
-                                                        className="certificate-image" 
-                                                        src={certificate.imageSource} 
+                                                    <img
+                                                        className="certificate-image"
+                                                        src={certificate.imageSource}
                                                         alt={certificate.imageAlt}
                                                         loading="lazy"
                                                     />
@@ -128,7 +140,7 @@ export default function Certificate(){
                                                 </div>
                                             </div>
                                         </OverlayTrigger>
-                                        
+
                                         {/* Certificate Info */}
                                         <div className="certificate-card-info">
                                             <h5 className="certificate-title">
@@ -143,6 +155,19 @@ export default function Certificate(){
                                                 <p className="certificate-date-small">
                                                     {certificate.date}
                                                 </p>
+                                            )}
+                                            {certificate.linkToVerify && (
+                                                <Button
+                                                    variant="success"
+                                                    size="sm"
+                                                    className="verify-btn-card"
+                                                    onClick={(e) => {
+                                                        e.stopPropagation();
+                                                        handleExternalLink(certificate.linkToVerify);
+                                                    }}
+                                                >
+                                                    ✅ Verify
+                                                </Button>
                                             )}
                                         </div>
                                     </div>
