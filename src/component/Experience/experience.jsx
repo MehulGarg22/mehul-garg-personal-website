@@ -81,7 +81,10 @@ export default function Experience(){
                                         icon={<WorkOutlineIcon />}
                                     >
                                         <div className="timeline-content">
-                                            <h3 className="company-title">{experience.companyName}</h3>
+                                            <div className="company-header">
+                                                {experience.logo && <img src={experience.logo} alt={experience.companyName} className="company-logo" />}
+                                                <h3 className="company-title">{experience.companyName}</h3>
+                                            </div>
                                             <h4 className="position-subtitle">{experience.position}</h4>
                                             <p className="work-description">{experience.workDescription}</p>
                                             {

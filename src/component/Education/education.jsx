@@ -37,7 +37,10 @@ export default function Education(){
                                 icon={<SchoolIcon />}
                                 
                             >
-                                <h3 className="title">{education?.educationName}</h3>
+                                <div className="education-header">
+                                    {education.logo && <img src={education.logo} alt={education.universityOrBoardName} className="education-logo" />}
+                                    <h3 className="title">{education?.educationName}</h3>
+                                </div>
                                 <h4 className="subtitle">
                                     {education.universityOrBoardName}<br/>
                                     {education.universityOrBoardNameNext}

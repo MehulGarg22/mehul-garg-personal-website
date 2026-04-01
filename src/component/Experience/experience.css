@@ -32,6 +32,18 @@
     margin-top: 60px;
 }
 
+/* Timeline Icon Logo Images */
+.vertical-timeline-element-icon {
+    overflow: hidden;
+}
+
+.vertical-timeline-element-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
 /* Timeline Elements */
 .custom-timeline-element .vertical-timeline-element-content {
     transition: all 0.3s ease;
@@ -64,11 +76,27 @@
     padding: 10px;
 }
 
+/* Company Header with Logo */
+.company-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 8px;
+}
+
+.company-logo {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    flex-shrink: 0;
+    border-radius: 6px;
+}
+
 .company-title {
     font-size: 1.4rem;
     font-weight: 700;
     color: #02aab0;
-    margin-bottom: 8px;
+    margin: 0;
     text-transform: uppercase;
     letter-spacing: 0.5px;
 }

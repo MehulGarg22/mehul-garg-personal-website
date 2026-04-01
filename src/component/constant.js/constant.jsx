@@ -65,6 +65,10 @@ import awsSNS from '../../asset/aws_sns.svg'
 import awsStepFunctions from '../../asset/aws_step_functions.svg'
 import awsCloudFront from '../../asset/aws_cloudfront.svg'
 import awsCloudWatch from '../../asset/aws_cloudwatch.svg'
+import tcsLogo from '../../asset/tcs_logo.png'
+import airtelLogo from '../../asset/airtel_logo.svg'
+import hnbguLogo from '../../asset/HNBGUlogo.png'
+import cbseLogo from '../../asset/cbse logo.png'
 
 export let array = [
     {
@@ -461,14 +465,16 @@ export let experienceArray = [
         date: "September 2022- Present",
         companyName: "Tata Consultancy Services Ltd.",
         position: "Software Engineer",
-        workDescription: ""
+        workDescription: "",
+        logo: tcsLogo
     },
     {
         date: "22 September 2021- 22 March 2022",
         companyName: "Airtel Digital",
         position: "Software Development Engineer Intern",
         workDescription: "",
-        certificate: "https://drive.google.com/file/d/1zj2Wz29O_KdMGf8NRrwC7AXPEVkIAD7V/view?usp=sharing"
+        certificate: "https://drive.google.com/file/d/1zj2Wz29O_KdMGf8NRrwC7AXPEVkIAD7V/view?usp=sharing",
+        logo: airtelLogo
     }
 ]
 
@@ -482,19 +488,22 @@ export let educationArray = [
             "🏅 Department Rank 1 in Information Technology (Batch 2018–22)",
             "🎯 Top 5 across School of Engineering & Technology (5 branches)",
             "📝 Admitted via JEE Mains — merit seat at a Central University"
-        ]
+        ],
+        logo: hnbguLogo
     },
     {
         date: "2017- 2018",
         educationName: "12th (Senior Secondary Examination)",
         universityOrBoardName: "Central Board of Secondary Education",
-        universityOrBoardNameNext: "(CBSE Board)"
+        universityOrBoardNameNext: "(CBSE Board)",
+        logo: cbseLogo
     },
     {
         date: "2015- 2016",
         educationName: "10th (Secondary Examination)",
         universityOrBoardName: "Central Board of Secondary Education",
-        universityOrBoardNameNext: "(CBSE Board)"
+        universityOrBoardNameNext: "(CBSE Board)",
+        logo: cbseLogo
     }
 ]
 
