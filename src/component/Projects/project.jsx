@@ -57,7 +57,7 @@ export default function Projects(){
     return(
         <div id="Projects" className="projects-section">
             <Container fluid>
-                <Heading heading={"__Projects__"}/>
+                <Heading heading={"Projects"}/>
                 <br/> <br/>
                 
                 {/* ═══════════════════════════════════════════════════════════

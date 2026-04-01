@@ -29,7 +29,7 @@ export default function Experience(){
         <div id="Experience" className="experience-container">
             <div className="experience-content">
                 <div style={{color: 'white', textAlign: 'center', marginBottom: '20px', fontSize:'30px', fontWeight: 'bold', paddingTop: '5px'}}>
-                    <p>__Experience__</p>
+                    <p>Experience</p>
                 </div>
                 
                 <Modal 

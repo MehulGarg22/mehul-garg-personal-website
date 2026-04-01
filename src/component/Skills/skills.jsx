@@ -19,7 +19,7 @@ export default function Skills(){
 
     return(
         <div id="Skills" className="skillContainer">
-            <Heading heading={"__Skills__"} />
+            <Heading heading={"Skills"} />
             <Container fluid className="px-3 px-md-4">
                 <div className="skills-content">
                     <Row xs={1} sm={2} lg={3} xl={4} className="g-4">

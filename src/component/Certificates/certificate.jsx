@@ -36,7 +36,7 @@ export default function Certificate() {
     return (
         <div id="Certificates" className="certificate-container">
             <div className="certificate-content">
-                <Heading heading={"__Certificates__"} />
+                <Heading heading={"Certificates"} />
 
                 {/* Certificate Modal */}
                 <Modal

@@ -1,17 +1,153 @@
-#Education .title{
-    font-size: 25px;
-    font-weight: bold;
-}
-#Education{
+/* Education Section — Modern 2025 Styles */
+#Education {
     color: white;
-    margin-top: 30px;
-    background-color: #02aab0;
-    background-image: linear-gradient(135 deg, #02aab0 0%, #00cdac 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+    padding: 80px 0 100px;
+    background: linear-gradient(135deg, #02aab0 0%, #00cdac 100%);
+    position: relative;
+    overflow: hidden;
 }
-.vertical-timeline-element-date{
+
+#Education::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 30% 70%, rgba(255, 255, 255, 0.08) 0%, transparent 50%),
+                radial-gradient(circle at 70% 30%, rgba(255, 255, 255, 0.08) 0%, transparent 50%);
+    pointer-events: none;
+}
+
+/* Override heading color for gradient section */
+#Education #heading .textLine1 {
     color: white;
- }
-.subtitle{
-    font-size: 15px;
+}
+
+#Education #heading .textLine1::after {
+    background: linear-gradient(90deg, rgba(255,255,255,0.9), rgba(255,255,255,0.5));
+}
+
+/* Education Timeline Cards */
+#Education .title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #02aab0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+#Education .subtitle {
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Timeline Date */
+#Education .vertical-timeline-element-date {
+    color: white !important;
+    font-weight: 600;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Timeline Card Hover Effect */
+#Education .vertical-timeline-element-content {
+    transition: all 0.3s ease;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+#Education .vertical-timeline-element-content:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Timeline Icon Glow */
+#Education .vertical-timeline-element-icon {
+    box-shadow: 0 0 20px rgba(2, 170, 176, 0.4);
+}
+
+/* Education Highlights */
+.education-highlights {
+    list-style: none;
+    padding: 0;
+    margin: 0.75rem 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.highlight-item {
+    font-size: 0.88rem;
+    color: #2b3b3e;
+    line-height: 1.5;
+    padding: 0.4rem 0.75rem;
+    background: linear-gradient(135deg, rgba(2, 170, 176, 0.06), rgba(0, 210, 255, 0.06));
+    border-left: 3px solid #02aab0;
+    border-radius: 0 8px 8px 0;
+    transition: all 0.2s ease;
+}
+
+.highlight-item:hover {
+    background: linear-gradient(135deg, rgba(2, 170, 176, 0.12), rgba(0, 210, 255, 0.1));
+    transform: translateX(4px);
+}
+
+/* Timeline Line */
+#Education .vertical-timeline::before {
+    background: rgba(255, 255, 255, 0.7) !important;
+    width: 3px !important;
+}
+
+/* Responsive */
+@media (max-width: 1170px) {
+    #Education .vertical-timeline-element-date {
+        font-size: 0.9rem !important;
+    }
+}
+
+@media (max-width: 768px) {
+    #Education {
+        padding: 60px 0 80px;
+    }
+    
+    #Education .title {
+        font-size: 1.15rem;
+    }
+    
+    #Education .subtitle {
+        font-size: 0.85rem;
+    }
+    
+    #Education .vertical-timeline-element-date {
+        font-size: 0.85rem !important;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    #Education {
+        padding: 40px 0 60px;
+    }
+    
+    #Education .title {
+        font-size: 1.05rem;
+    }
+    
+    #Education .subtitle {
+        font-size: 0.8rem;
+    }
+}
+
+/* Print styles */
+@media print {
+    #Education {
+        background: white !important;
+        color: black !important;
+    }
+    
+    #Education .vertical-timeline-element-date {
+        color: black !important;
+        text-shadow: none;
+    }
 }

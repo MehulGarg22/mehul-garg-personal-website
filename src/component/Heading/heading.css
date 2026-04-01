@@ -1,8 +1,31 @@
-#heading{
+/* Modern Heading Styles */
+#heading {
     padding-top: 5px;
+    margin-bottom: 1rem;
 }
-#heading .textLine1{
+
+#heading .textLine1 {
     text-align: center;
-    font-size: 30px;
-    font-weight: bold;
+    font-size: clamp(1.8rem, 3.5vw, 2.4rem);
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    color: #0c2326;
+    margin-bottom: 0;
+    padding-bottom: 0.5rem;
+}
+
+#heading .textLine1::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background: linear-gradient(90deg, #02AAB0, #00D2FF);
+    border-radius: 2px;
 }

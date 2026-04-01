@@ -477,19 +477,24 @@ export let educationArray = [
         date: "2018- 2022",
         educationName: "B.Tech, Information Technology",
         universityOrBoardName: "Hemvati Nandan Bahuguna Garhwal University",
-        universityOrBoardNameNext: "(A Central University)"
+        universityOrBoardNameNext: "(A Central University)",
+        highlights: [
+            "🏅 Department Rank 1 in Information Technology (Batch 2018–22)",
+            "🎯 Top 5 across School of Engineering & Technology (5 branches)",
+            "📝 Admitted via JEE Mains — merit seat at a Central University"
+        ]
     },
     {
         date: "2017- 2018",
         educationName: "12th (Senior Secondary Examination)",
         universityOrBoardName: "Central Board of Secondary Education",
-        universityOrBoardNameNext: "(A Central University)"
+        universityOrBoardNameNext: "(CBSE Board)"
     },
     {
         date: "2015- 2016",
         educationName: "10th (Secondary Examination)",
         universityOrBoardName: "Central Board of Secondary Education",
-        universityOrBoardNameNext: "(A Central University)"
+        universityOrBoardNameNext: "(CBSE Board)"
     }
 ]
 
