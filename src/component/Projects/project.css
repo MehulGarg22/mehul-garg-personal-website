@@ -22,6 +22,177 @@
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
 }
 
+/* ═══════════════════════════════════════════════════════
+   Featured Project — CloudX Suite Styling  
+   ═══════════════════════════════════════════════════════ */
+
+.featured-project-wrapper {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.featured-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: linear-gradient(135deg, #02AAB0 0%, #00D2FF 50%, #6366f1 100%);
+    background-size: 200% auto;
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border-radius: 25px 25px 0 0;
+    font-weight: 700;
+    font-size: 0.85rem;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-left: 20px;
+    margin-bottom: 0;
+    position: relative;
+    z-index: 2;
+    animation: gradient-shift 4s ease infinite;
+}
+
+.featured-badge-icon {
+    font-size: 1rem;
+    animation: pulse-star 2s ease-in-out infinite;
+}
+
+@keyframes pulse-star {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+}
+
+@keyframes gradient-shift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.featured-project-row {
+    border: 2px solid transparent;
+    background-image: linear-gradient(white, white), linear-gradient(135deg, #02AAB0, #00D2FF, #6366f1);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    border-radius: 0 15px 15px 15px !important;
+    position: relative;
+    overflow: hidden;
+}
+
+.featured-project-row::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #02AAB0, #00D2FF, #6366f1);
+    z-index: 1;
+}
+
+.featured-project-row:hover {
+    box-shadow: 
+        0 20px 50px rgba(2, 170, 176, 0.15),
+        0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.featured-image-container {
+    background: linear-gradient(135deg, #f0fdfa 0%, #e0f2fe 100%) !important;
+    border: 1px solid rgba(2, 170, 176, 0.15);
+}
+
+/* Project Subtitle */
+.project-subtitle {
+    font-weight: 400;
+    font-size: 1rem;
+    color: #64748b;
+}
+
+/* ═══════════════════════════════════════════════════════
+   Tech Stack Tags  
+   ═══════════════════════════════════════════════════════ */
+
+.tech-tags-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.tech-tag {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.35rem 0.85rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    background: linear-gradient(135deg, rgba(2, 170, 176, 0.08), rgba(0, 210, 255, 0.08));
+    color: #02AAB0;
+    border: 1px solid rgba(2, 170, 176, 0.25);
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    animation: fadeInTag 0.4s ease forwards;
+    opacity: 0;
+    cursor: default;
+}
+
+@keyframes fadeInTag {
+    from {
+        opacity: 0;
+        transform: translateY(8px) scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.tech-tag:hover {
+    background: linear-gradient(135deg, #02AAB0, #00D2FF);
+    color: white;
+    border-color: transparent;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(2, 170, 176, 0.3);
+}
+
+/* Featured Button */
+.featured-btn {
+    background: linear-gradient(135deg, #02AAB0, #00D2FF) !important;
+    color: white !important;
+    border: none !important;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.featured-btn::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 200%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+    transition: left 0.5s ease;
+}
+
+.featured-btn:hover::after {
+    left: 100%;
+}
+
+.featured-btn:hover {
+    background: linear-gradient(135deg, #029da3, #00b8e0) !important;
+    color: white !important;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(2, 170, 176, 0.4) !important;
+}
+
+/* ═══════════════════════════════════════════════════════
+   Standard Project Styles (unchanged)
+   ═══════════════════════════════════════════════════════ */
+
 /* Image container and styling */
 .project-image-container {
     display: flex;
@@ -90,6 +261,15 @@
     font-weight: bold;
 }
 
+/* Featured project uses teal arrows instead of blue */
+.featured-project-row .project-features li::before {
+    color: #02AAB0;
+}
+
+.featured-project-row .project-content h3 {
+    border-bottom-color: #02AAB0;
+}
+
 /* Button container */
 .projectLiveButtonContainer {
     display: flex;
@@ -130,7 +310,10 @@
     transform: scale(1.1);
 }
 
-/* Responsive breakpoints */
+/* ═══════════════════════════════════════════════════════
+   Responsive breakpoints
+   ═══════════════════════════════════════════════════════ */
+
 @media (max-width: 768px) {
     .projects-section {
         padding: 1rem 0;
@@ -144,6 +327,12 @@
     .project-content h3 {
         font-size: 1.3rem;
         text-align: center;
+    }
+
+    .project-subtitle {
+        display: block;
+        font-size: 0.85rem;
+        margin-top: 0.25rem;
     }
     
     .project-content p {
@@ -167,6 +356,21 @@
     .button {
         padding: 0.6rem 1.2rem;
         font-size: 0.9rem;
+    }
+
+    .featured-badge {
+        font-size: 0.75rem;
+        padding: 0.4rem 1rem;
+        margin-left: 10px;
+    }
+
+    .tech-tags-container {
+        justify-content: center;
+    }
+
+    .tech-tag {
+        font-size: 0.72rem;
+        padding: 0.3rem 0.65rem;
     }
 }
 
@@ -206,6 +410,16 @@
         align-items: center;
         cursor: pointer;
     }
+
+    .featured-badge {
+        font-size: 0.7rem;
+        letter-spacing: 1px;
+    }
+
+    .tech-tag {
+        font-size: 0.68rem;
+        padding: 0.25rem 0.55rem;
+    }
 }
 
 /* Large screens */
@@ -228,6 +442,11 @@
     
     .project-image {
         max-height: 350px;
+    }
+
+    .tech-tag {
+        font-size: 0.85rem;
+        padding: 0.4rem 1rem;
     }
 }
 

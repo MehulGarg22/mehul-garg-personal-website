@@ -60,6 +60,11 @@ import materialui from '../../asset/marteialUI.svg'
 import tailwindcss from '../../asset/tailwindcss.svg'
 import AWSAIUdemyTraining from '../../asset/AWS Certified AI Practitioner Udemy Certificate- Mehul Garg.jpg'
 import AWSCertificateAIPractitioner from '../../asset/Mehul Garg AWS Certified AI Practitioner.png'
+import cloudxsuite from '../../asset/CloudX Suite.png'
+import awsSNS from '../../asset/aws_sns.svg'
+import awsStepFunctions from '../../asset/aws_step_functions.svg'
+import awsCloudFront from '../../asset/aws_cloudfront.svg'
+import awsCloudWatch from '../../asset/aws_cloudwatch.svg'
 
 export let array = [
     {
@@ -300,6 +305,26 @@ export let skillsArray = [
                 imageAlt: "s3",
                 descirption: "AWS S3",
                 image: s3
+            },
+            {
+                imageAlt: "sns",
+                descirption: "AWS SNS",
+                image: awsSNS
+            },
+            {
+                imageAlt: "stepfunctions",
+                descirption: "AWS Step Functions",
+                image: awsStepFunctions
+            },
+            {
+                imageAlt: "cloudfront",
+                descirption: "AWS CloudFront",
+                image: awsCloudFront
+            },
+            {
+                imageAlt: "cloudwatch",
+                descirption: "AWS CloudWatch",
+                image: awsCloudWatch
             }
         ]
     },
@@ -470,6 +495,11 @@ export let educationArray = [
 
 export let projectArray = [
     {
+        description: "CloudX Suite",
+        urlLink: "https://cloudxsuite.netlify.app",
+        image: cloudxsuite
+    },
+    {
         description: "Trishul Technical Fest",
         urlLink: "https://trishulfest.netlify.app/"
     },
@@ -488,9 +518,5 @@ export let projectArray = [
     {
         description: "Color Picker",
         urlLink: "https://colorpiker.netlify.app/"
-    },
-    {
-        description: "Cloud Connect Blogs",
-        urlLink: "https://connectcloudblogs.netlify.app/"
     },
 ]

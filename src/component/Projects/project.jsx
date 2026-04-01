@@ -13,9 +13,14 @@ import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import Container from 'react-bootstrap/Container';
 import {projectArray} from '../constant.js/constant';
-import connectcloud from '../../asset/connectcloudblog.png'
+import CloudXSuiteImg from '../../asset/CloudX Suite.png'
 import Tooltip from 'react-bootstrap/Tooltip';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
+
+const techTags = [
+    "React 19", "AWS Lambda", "DynamoDB", "S3", "Cognito",
+    "Node.js", "Ant Design", "Step Functions", "SNS", "API Gateway"
+];
 
 export default function Projects(){
     const [resumePopUp, setResumePopUp]=useState(false);
@@ -26,23 +31,23 @@ export default function Projects(){
         </Tooltip>
     );
 
-    const trishulUrlNavigate=()=>{
-        window.open(projectArray[0].urlLink, "_blank")
+    const cloudXSuiteUrlNavigate=()=>{
+        window.open("https://cloudxsuite.netlify.app", "_blank")
     }
-    const starTrooperUrlNavigate=()=>{
+    const trishulUrlNavigate=()=>{
         window.open(projectArray[1].urlLink, "_blank")
     }
-    const cricketFantasyUrlNavigate=()=>{
+    const starTrooperUrlNavigate=()=>{
         window.open(projectArray[2].urlLink, "_blank")
     }
-    const algoEnggUrlNavigate=()=>{
+    const cricketFantasyUrlNavigate=()=>{
         window.open(projectArray[3].urlLink, "_blank")
     }
-    const colorPickerUrlNavigate=()=>{
+    const algoEnggUrlNavigate=()=>{
         window.open(projectArray[4].urlLink, "_blank")
     }
-    const cloudConnectBlogsUrlNavigate=()=>{
-        window.open(projectArray[5].urlLink, "_blank")  
+    const colorPickerUrlNavigate=()=>{
+        window.open(projectArray[5].urlLink, "_blank")
     }
 
     const handleResumeClick=()=>{
@@ -55,61 +60,79 @@ export default function Projects(){
                 <Heading heading={"__Projects__"}/>
                 <br/> <br/>
                 
-                {/* ConnectCloud Blogs Project */}
-                <Row className="project-row align-items-center mb-5">
-                    <Col xs={12} md={6} lg={5} className="project-image-col">
-                        <div className="project-image-container">
-                            <img
-                                className="project-image img-fluid"
-                                src={connectcloud}
-                                alt="Connect Cloud Blogs"
-                            />
-                        </div>
-                    </Col>
-                    <Col xs={12} md={6} lg={7}>
-                        <section className="project-content">
-                            <h3><strong>ConnectCloud Blogs</strong></h3>
-                            <p>A production-grade blogging platform built with <strong>ReactJS</strong> and <strong>AWS Serverless</strong> technologies, enabling secure and scalable blog management with rich UI and cloud integration.</p>
+                {/* ═══════════════════════════════════════════════════════════
+                    CloudX Suite — Featured Project  
+                    ═══════════════════════════════════════════════════════════ */}
+                <div className="featured-project-wrapper">
+                    <div className="featured-badge">
+                        <span className="featured-badge-icon">⭐</span>
+                        <span>Featured Project</span>
+                    </div>
+                    <Row className="project-row featured-project-row align-items-center mb-5">
+                        <Col xs={12} md={6} lg={5} className="project-image-col">
+                            <div className="project-image-container featured-image-container">
+                                <img
+                                    className="project-image img-fluid"
+                                    src={CloudXSuiteImg}
+                                    alt="CloudX Suite — Full-Stack Serverless Cloud Platform"
+                                />
+                            </div>
+                        </Col>
+                        <Col xs={12} md={6} lg={7}>
+                            <section className="project-content">
+                                <h3><strong>CloudX Suite</strong>
+                                    <span className="project-subtitle"> — Full-Stack Serverless Cloud Platform</span>
+                                </h3>
+                                <p>A production-grade, role-based cloud platform built with <strong>React 19</strong> and <strong>AWS Serverless</strong> architecture — featuring credit-card rewards analytics, a community blog engine, and secure profile management.</p>
 
-                            <ul className="project-features">
-                                <li>
-                                Implemented <strong>user registration</strong> with optional <strong>profile image upload</strong> via <strong>presigned URLs</strong> to <strong>Amazon S3</strong>; default image used if not provided.
-                                </li>
-                                <li>
-                                Stored user data in <strong>DynamoDB</strong> using <strong>email as partition key</strong>. Integrated <strong>JWT-based authentication</strong> with 1-hour expiry using <strong>Lambda Layers</strong> and <strong>jsonwebtoken</strong>.
-                                </li>
-                                <li>
-                                Developed <strong>7 AWS Lambda functions</strong> in <strong>Node.js</strong> for <code>signup</code>, <code>signin</code>, <code>createBlog</code>, <code>getBlogs</code>, <code>updateBlog</code>, <code>deleteBlog</code>, and <code>generatePresignedURL</code>, exposed via <strong>API Gateway</strong>.
-                                </li>
-                                <li>
-                                Enabled blog creation with <strong>title</strong>, <strong>description</strong>, and <strong>image upload to S3</strong>. Blogs stored in <strong>DynamoDB</strong> with <code>email</code> as Primary Key and <code>blogId</code> (via <strong>uuid</strong>) as Sort Key.
-                                </li>
-                                <li>
-                                Built responsive UI using <strong>ReactJS</strong> and <strong>Ant Design</strong> including forms, modals, notifications, and dynamic <strong>AntD Table</strong> views.
-                                </li>
-                                <li>
-                                Supported <strong>update</strong> and <strong>delete</strong> blog functionality with confirmation pop-ups and real-time status feedback using Ant Design.
-                                </li>
-                                <li>
-                                Integrated <strong>View Full Blog</strong> button in each table row to render complete blog content.
-                                </li>
-                                <li>
-                                Deployed frontend via <strong>Netlify CI/CD</strong> from GitHub. Backend runs on a fully <strong>stateless, serverless architecture</strong> with <strong>IAM-based access control</strong>.
-                                </li>
-                            </ul>
+                                <ul className="project-features">
+                                    <li>
+                                        Architected a <strong>3-tier RBAC system</strong> (Administrator, User, Guest) with <strong>AWS Cognito</strong> JWT authentication, auto-logout on token expiry, and session management via <strong>React Context API</strong>.
+                                    </li>
+                                    <li>
+                                        Built <strong>13 AWS Lambda functions</strong> (Node.js 18, ES Modules, AWS SDK v3) powering CRUD operations, event-driven workflows, and presigned URL generation — all exposed via <strong>2 API Gateways</strong>.
+                                    </li>
+                                    <li>
+                                        Designed <strong>3 DynamoDB tables</strong> with optimized access patterns using <code>Query</code> (partition key) and <code>Scan</code> operations with pagination support for large datasets.
+                                    </li>
+                                    <li>
+                                        Developed a <strong>credit card rewards comparison engine</strong> analyzing 16+ cards across 9 Indian platforms (Amazon, Flipkart, Swiggy, Zomato, Myntra, BigBasket, Ola, Uber, Rapido) with sortable tables and color-coded rewards.
+                                    </li>
+                                    <li>
+                                        Engineered a <strong>community blog platform</strong> with personal & community feeds, pagination, search filtering, and role-aware CRUD — Guest users get read-only access.
+                                    </li>
+                                    <li>
+                                        Implemented a <strong>secure S3 presigned URL pipeline</strong> for profile image uploads — eliminating server-side file handling with direct client-to-S3 PUT operations.
+                                    </li>
+                                    <li>
+                                        Integrated <strong>AWS Step Functions</strong> triggered by Cognito Post-Confirmation Lambda for orchestrated signup workflows, with <strong>SNS</strong> notifications to admin on new registrations.
+                                    </li>
+                                    <li>
+                                        Deployed frontend via <strong>Netlify CI/CD</strong> from GitHub. Built responsive UI using <strong>Ant Design</strong>, <strong>Tailwind CSS</strong>, and <strong>Headless UI</strong> with micro-animations and role-specific dashboards.
+                                    </li>
+                                </ul>
 
-                            <p><strong>Impact:</strong> Achieved <strong>100% image upload reliability</strong> and improved blog performance by <strong>40%</strong> with optimized DynamoDB queries.</p>
-                        </section>
-                        <div className="projectLiveButtonContainer">
-                            <Button className="button me-3" onClick={cloudConnectBlogsUrlNavigate} variant="outline-info">See Live</Button>        
-                            <a className="documentImage" href="https://drive.google.com/file/d/1LLaYK8b43N7M6OvOiHdl6vEwUfGabtI_/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                                <img className="documentation-icon" height="40" width="40" src={documentImage} alt="Documentation" />
-                            </a>
-                        </div>
-                    </Col>
-                </Row>
+                                <p><strong>Impact:</strong> Architected a <strong>fully serverless, zero-EC2</strong> production platform with <strong>100% image upload reliability</strong> via presigned URLs and optimized DynamoDB queries across 3 tables.</p>
+                                
+                                {/* Tech Stack Tags */}
+                                <div className="tech-tags-container">
+                                    {techTags.map((tag, index) => (
+                                        <span key={index} className="tech-tag" style={{ animationDelay: `${index * 0.05}s` }}>
+                                            {tag}
+                                        </span>
+                                    ))}
+                                </div>
+                            </section>
+                            <div className="projectLiveButtonContainer">
+                                <Button className="button featured-btn me-3" onClick={cloudXSuiteUrlNavigate} variant="outline-info">🚀 See Live</Button>        
+                            </div>
+                        </Col>
+                    </Row>
+                </div>
 
-                {/* Trishul Techfest Project */}
+                {/* ═══════════════════════════════════════════════════════════
+                    Trishul Techfest Project  
+                    ═══════════════════════════════════════════════════════════ */}
                 <Row className="project-row align-items-center mb-5">
                     <Col xs={12} md={6} lg={5} className="project-image-col order-md-2">
                         <div className="project-image-container">
