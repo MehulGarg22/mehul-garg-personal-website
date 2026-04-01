@@ -35,8 +35,8 @@ export default function Home() {
                 <div className="hero-section">
                     <div className="text-content">
                         <div className="greeting-text">
-                            Hi, my name is 
-                            <span className="name-highlight"> Mehul Garg</span>
+                            Hi, my name is{' '}
+                            <span className="name-highlight">Mehul Garg</span>
                         </div>
                         <div className="profession-text">
                             I'm a <span className="profession-highlight">Software Engineer</span>.
