@@ -59,6 +59,7 @@ import chartjs from '../../asset/chartjs.ico';
 import materialui from '../../asset/marteialUI.svg'
 import tailwindcss from '../../asset/tailwindcss.svg'
 import AWSAIUdemyTraining from '../../asset/AWS Certified AI Practitioner Udemy Certificate- Mehul Garg.jpg'
+import AWSSAAUdemyTraining from '../../asset/AWS Solution Architect Associate Udemy Certificate.jpg'
 import AWSCertificateAIPractitioner from '../../asset/Mehul Garg AWS Certified AI Practitioner.png'
 import cloudxsuite from '../../asset/CloudX Suite.png'
 import awsSNS from '../../asset/aws_sns.svg'
@@ -380,11 +381,17 @@ export let certificateArray = [
         description: "AWS Certified Cloud Practitioner",
         linkToVerify: "https://cp.certmetrics.com/amazon/en/public/verify/credential/EJ47N2VKWEB4Q0W2",
     },
-
+    {
+        imageSource: AWSSAAUdemyTraining,
+        imageAlt: "AWS Solution Architect Associate Udemy Certificate",
+        imageLink: "https://drive.google.com/file/d/1HfPC4p9l5ScDKgNLvMo1KD_U1-Q0Qwqb/view?usp=sharing",
+        description: "AWS Solution Architect Associate Udemy Certificate",
+        linkToVerify: "https://www.udemy.com/certificate/UC-5f3da0a4-5303-4928-aaa9-3023cbed5b55/",
+    },
     {
         imageSource: AWSAIUdemyTraining,
         imageAlt: "Mehul-Garg-AWS-AI-Practitioner-Udemy-Training-Certificate",
-        imageLink: "https://drive.google.com/file/d/1_l4Nhe0gV0c4dpbjLTuLFUm2oGE523jy/view?usp=sharing",
+        imageLink: "https://drive.google.com/file/d/11x000l5xAwLD2kvnSkF4Xz6Om0Jy7cjE/view?usp=sharing",
         description: "AWS Certified AI Practitioner Udemy Certificate",
         linkToVerify: "https://www.udemy.com/certificate/UC-787d6292-f47c-4984-9110-61abcb98e46c/"
     },
