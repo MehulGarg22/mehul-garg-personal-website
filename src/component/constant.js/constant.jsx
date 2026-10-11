@@ -384,7 +384,7 @@ export let certificateArray = [
     {
         imageSource: AWSSAAUdemyTraining,
         imageAlt: "AWS Solution Architect Associate Udemy Certificate",
-        imageLink: "https://drive.google.com/file/d/1HfPC4p9l5ScDKgNLvMo1KD_U1-Q0Qwqb/view?usp=sharing",
+        imageLink: "https://drive.google.com/file/d/1VvJXPIfwS27EtlKFmI7FOrTa97x5RvOW/view?usp=sharing",
         description: "AWS Solution Architect Associate Udemy Certificate",
         linkToVerify: "https://www.udemy.com/certificate/UC-5f3da0a4-5303-4928-aaa9-3023cbed5b55/",
     },
