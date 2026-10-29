@@ -7,6 +7,7 @@ import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Tooltip from 'react-bootstrap/Tooltip';
 import awsCCPBadge from '../../asset/Mehul Garg AWS Certified Cloud Practitioner Badge.png';
 import awsAIBadge from '../../asset/Mehul Garg AWS AI Practitioner Badge.png';
+import awsSAABadge from '../../asset/aws-certified-solutions-architect-associate-badge.png';
 
 export default function Home() {
     const [isHovering, setIsHovering] = useState(false);
@@ -78,8 +79,24 @@ export default function Home() {
                                     </div>
                                 </a>
                             </OverlayTrigger>
+                            <OverlayTrigger
+                                placement="bottom"
+                                delay={{ show: 250, hide: 400 }}
+                                overlay={renderTooltip("AWS Certified Solutions Architect - Associate — Verify on Credly")}
+                            >
+                                <a
+                                    href="https://cp.certmetrics.com/amazon/en/public/verify/credential"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="aws-badge-link"
+                                >
+                                    <div className="aws-badge-card">
+                                        <img src={awsSAABadge} alt="AWS Certified Solutions Architect - Associate" className="aws-badge-img" />
+                                    </div>
+                                </a>
+                            </OverlayTrigger>
                         </div>
-                        <p className="aws-badges-label">2× AWS Certified</p>
+                        <p className="aws-badges-label">3× AWS Certified</p>
                     </div>
 
                     <div className="social-links-container">

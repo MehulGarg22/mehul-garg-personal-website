@@ -61,6 +61,7 @@ import tailwindcss from '../../asset/tailwindcss.svg'
 import AWSAIUdemyTraining from '../../asset/AWS Certified AI Practitioner Udemy Certificate- Mehul Garg.jpg'
 import AWSSAAUdemyTraining from '../../asset/AWS Solution Architect Associate Udemy Certificate.jpg'
 import AWSCertificateAIPractitioner from '../../asset/Mehul Garg AWS Certified AI Practitioner.png'
+import AWSCertifiedSAA from '../../asset/AWS Solution Architect Associate Certificate.jpg'
 import cloudxsuite from '../../asset/CloudX Suite.png'
 import awsSNS from '../../asset/aws_sns.svg'
 import awsStepFunctions from '../../asset/aws_step_functions.svg'
@@ -366,6 +367,16 @@ export let skillsArray = [
 ]
 
 export let certificateArray = [
+    {
+        imageSource: AWSCertifiedSAA,
+        imageAlt: "AWS Certified Solutions Architect - Associate",
+        imageLink: "https://drive.google.com/file/d/1HfPC4p9l5ScDKgNLvMo1KD_U1-Q0Qwqb/view?usp=sharing",
+        title: "AWS Certified Solutions Architect - Associate",
+        description: "AWS Certified Solutions Architect - Associate (SAA-C03). Validates expertise in designing distributed systems and architectures on AWS.",
+        issuer: "Amazon Web Services (AWS)",
+        date: "October 2026",
+        linkToVerify: "https://cp.certmetrics.com/amazon/en/public/verify/credential",
+    },
     {
         imageSource: AWSCertificateAIPractitioner,
         imageAlt: "AWS Certified AI Practitioner",
