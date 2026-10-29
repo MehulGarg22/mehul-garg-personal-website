@@ -50,16 +50,16 @@ export default function Home() {
                             <OverlayTrigger
                                 placement="bottom"
                                 delay={{ show: 250, hide: 400 }}
-                                overlay={renderTooltip("AWS Certified Cloud Practitioner — Verify on Credly")}
+                                overlay={renderTooltip("AWS Certified Solutions Architect - Associate — Verify on Credly")}
                             >
                                 <a
-                                    href="https://cp.certmetrics.com/amazon/en/public/verify/credential/EJ47N2VKWEB4Q0W2"
+                                    href="https://cp.certmetrics.com/amazon/en/public/verify/credential"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="aws-badge-link"
                                 >
                                     <div className="aws-badge-card">
-                                        <img src={awsCCPBadge} alt="AWS Certified Cloud Practitioner" className="aws-badge-img" />
+                                        <img src={awsSAABadge} alt="AWS Certified Solutions Architect - Associate" className="aws-badge-img" />
                                     </div>
                                 </a>
                             </OverlayTrigger>
@@ -82,16 +82,16 @@ export default function Home() {
                             <OverlayTrigger
                                 placement="bottom"
                                 delay={{ show: 250, hide: 400 }}
-                                overlay={renderTooltip("AWS Certified Solutions Architect - Associate — Verify on Credly")}
+                                overlay={renderTooltip("AWS Certified Cloud Practitioner — Verify on Credly")}
                             >
                                 <a
-                                    href="https://cp.certmetrics.com/amazon/en/public/verify/credential"
+                                    href="https://cp.certmetrics.com/amazon/en/public/verify/credential/EJ47N2VKWEB4Q0W2"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="aws-badge-link"
                                 >
                                     <div className="aws-badge-card">
-                                        <img src={awsSAABadge} alt="AWS Certified Solutions Architect - Associate" className="aws-badge-img" />
+                                        <img src={awsCCPBadge} alt="AWS Certified Cloud Practitioner" className="aws-badge-img" />
                                     </div>
                                 </a>
                             </OverlayTrigger>
