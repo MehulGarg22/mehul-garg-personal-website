@@ -106,7 +106,7 @@ export let array = [
 export let aboutArray = [
     {
         resumeLink: "https://drive.google.com/file/d/1tjWCiwwTzLa4JyKUY0tgeo4TO0YHoQTF/view?usp=sharing",
-        coverLetterLink: "https://drive.google.com/file/d/1UUZbT_g20nabaPNk_UWiM166SEFHIiiL/view?usp=sharing"
+        coverLetterLink: "https://drive.google.com/file/d/1k7I7ULBPDUww6VHwzZK26KHRE4q3FoRG/view?usp=sharing"
     }
 ]
 
