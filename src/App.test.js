@@ -6,7 +6,7 @@ test('presents the portfolio and its primary links', () => {
   expect(screen.getByRole('heading', { name: /mehul garg/i })).toBeInTheDocument();
   expect(screen.getByRole('link', { name: /explore my work/i })).toHaveAttribute('href', '#work');
   expect(screen.getByRole('heading', { name: 'CloudX Suite' })).toBeInTheDocument();
-  expect(screen.getByRole('link', { name: /view résumé/i })).toHaveAttribute('href', expect.stringContaining('.pdf'));
+  expect(screen.getByRole('link', { name: /view resume/i })).toHaveAttribute('href', expect.stringContaining('.pdf'));
 });
 
 test('mobile navigation opens and closes after following a section link', () => {
