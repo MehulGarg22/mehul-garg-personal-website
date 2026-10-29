@@ -1,6 +1,5 @@
 import aboutme from '../../asset/Aboutme.png'
 import certificate from '../../asset/certificate.png'
-import contact from '../../asset/contact.png'
 import education from '../../asset/Education.png'
 import home from '../../asset/Home.png'
 import project from '../../asset/project.png'
@@ -28,7 +27,6 @@ import mongodb from '../../asset/MongoDb.png'
 import npm from '../../asset/npm.png'
 import postman from '../../asset/postman-icon.png';
 import git from '../../asset/git.png';
-import githubs from '../../asset/github.png';
 import vscode from '../../asset/VScode.png';
 import lambda from '../../asset/Lambda.png';
 import dynamodb from '../../asset/DynamoDB.png'
@@ -41,11 +39,6 @@ import s3 from '../../asset/Simple Storage Service.png';
 import awscloudpractitioner from '../../asset/Mehul Garg AWS Certified Cloud Practitioner.png';
 import googleTech from '../../asset/GoogleTech.png';
 import internshala from '../../asset/Internshala.png'
-import linkedinsvg from '../../asset/linkedinsvg.png';
-import githubsvg from '../../asset/githubsvg.png';
-import xsvg from '../../asset/xsvg.png';
-import instagramsvg from '../../asset/instagramsvg.png';
-import mailsvg from '../../asset/mailsvg.png';
 import modernReactwithRedux from '../../asset/MehulFullStack.jpg'
 import awsdeveloperassociatecertificate from '../../asset/Mehul-Garg-AWS-Developer-Associate-Training-Certificate.png';
 import leetcode from '../../asset/leetcode.png'
